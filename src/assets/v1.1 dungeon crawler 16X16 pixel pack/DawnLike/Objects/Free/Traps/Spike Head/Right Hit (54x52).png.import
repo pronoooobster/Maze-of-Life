@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cu0cmx2g0jb06"
-path="res://.godot/imported/Right Hit (54x52).png-dcd8a23def8249e077d574381dc72702.ctex"
+path="res://.godot/imported/Right Hit (54x52).png-4f65a50c1b3c2e3e6011eabfe7bf7976.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Traps/Spike Head/Right Hit (54x52).png"
-dest_files=["res://.godot/imported/Right Hit (54x52).png-dcd8a23def8249e077d574381dc72702.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Traps/Spike Head/Right Hit (54x52).png"
+dest_files=["res://.godot/imported/Right Hit (54x52).png-4f65a50c1b3c2e3e6011eabfe7bf7976.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8r43cina0a7b"
-path="res://.godot/imported/20 Enemies.png-1f6d2532988296652aa48c09ebb0c119.ctex"
+path="res://.godot/imported/20 Enemies.png-380501a82962d5a5229fb691ae21f92a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/20 Enemies.png"
-dest_files=["res://.godot/imported/20 Enemies.png-1f6d2532988296652aa48c09ebb0c119.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/20 Enemies.png"
+dest_files=["res://.godot/imported/20 Enemies.png-380501a82962d5a5229fb691ae21f92a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gv5u5ujr5wwq"
-path="res://.godot/imported/Collected.png-f9a675e13acaa05711ed1e59c8aafdd3.ctex"
+path="res://.godot/imported/Collected.png-a00f346c83adc69cf5cb547ff5b6db55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Items/Fruits/Collected.png"
-dest_files=["res://.godot/imported/Collected.png-f9a675e13acaa05711ed1e59c8aafdd3.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Items/Fruits/Collected.png"
+dest_files=["res://.godot/imported/Collected.png-a00f346c83adc69cf5cb547ff5b6db55.ctex"]
 
 [params]
 

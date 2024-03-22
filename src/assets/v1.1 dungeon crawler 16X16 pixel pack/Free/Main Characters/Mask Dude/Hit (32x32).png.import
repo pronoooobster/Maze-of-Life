@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dft0gdg7h6rxx"
-path="res://.godot/imported/Hit (32x32).png-1054cbaa3dd05f3c24a834f7154cb8fe.ctex"
+path="res://.godot/imported/Hit (32x32).png-0dd227495a02509513e1f1dcea8cf51a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Main Characters/Mask Dude/Hit (32x32).png"
-dest_files=["res://.godot/imported/Hit (32x32).png-1054cbaa3dd05f3c24a834f7154cb8fe.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Main Characters/Mask Dude/Hit (32x32).png"
+dest_files=["res://.godot/imported/Hit (32x32).png-0dd227495a02509513e1f1dcea8cf51a.ctex"]
 
 [params]
 

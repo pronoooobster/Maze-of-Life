@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d8pdpodqxnlg"
-path="res://.godot/imported/Pineapple.png-eeb76dd14c0a29a84f2509beb1ae7f8b.ctex"
+path="res://.godot/imported/Pineapple.png-ec5b301322a6ea50f17229d2c6f115cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Items/Fruits/Pineapple.png"
-dest_files=["res://.godot/imported/Pineapple.png-eeb76dd14c0a29a84f2509beb1ae7f8b.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Items/Fruits/Pineapple.png"
+dest_files=["res://.godot/imported/Pineapple.png-ec5b301322a6ea50f17229d2c6f115cd.ctex"]
 
 [params]
 

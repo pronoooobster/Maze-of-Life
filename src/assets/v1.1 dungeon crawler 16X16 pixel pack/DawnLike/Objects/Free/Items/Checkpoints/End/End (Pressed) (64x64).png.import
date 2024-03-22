@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o4roi1vamlyv"
-path="res://.godot/imported/End (Pressed) (64x64).png-f5d64a0a61699525d685622776367a0d.ctex"
+path="res://.godot/imported/End (Pressed) (64x64).png-c19aafaea5f28cde6fac32f9e3fb77ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Items/Checkpoints/End/End (Pressed) (64x64).png"
-dest_files=["res://.godot/imported/End (Pressed) (64x64).png-f5d64a0a61699525d685622776367a0d.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Items/Checkpoints/End/End (Pressed) (64x64).png"
+dest_files=["res://.godot/imported/End (Pressed) (64x64).png-c19aafaea5f28cde6fac32f9e3fb77ab.ctex"]
 
 [params]
 

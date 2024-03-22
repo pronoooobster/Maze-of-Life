@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bh0mp0iovgwc6"
-path="res://.godot/imported/Leaderboard.png-cc94ece1eee8b97ffef52d93992606a3.ctex"
+path="res://.godot/imported/Leaderboard.png-341c05b44aff15948a2584c910f304a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Menu/Buttons/Leaderboard.png"
-dest_files=["res://.godot/imported/Leaderboard.png-cc94ece1eee8b97ffef52d93992606a3.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Menu/Buttons/Leaderboard.png"
+dest_files=["res://.godot/imported/Leaderboard.png-341c05b44aff15948a2584c910f304a5.ctex"]
 
 [params]
 

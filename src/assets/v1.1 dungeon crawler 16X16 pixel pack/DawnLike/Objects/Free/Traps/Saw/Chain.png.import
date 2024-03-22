@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5ijgiow6djgr"
-path="res://.godot/imported/Chain.png-49d9672aab59719b90ecc55d1e05fd03.ctex"
+path="res://.godot/imported/Chain.png-773c707e294f9e1191c30bf4eba2473a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Traps/Saw/Chain.png"
-dest_files=["res://.godot/imported/Chain.png-49d9672aab59719b90ecc55d1e05fd03.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Traps/Saw/Chain.png"
+dest_files=["res://.godot/imported/Chain.png-773c707e294f9e1191c30bf4eba2473a.ctex"]
 
 [params]
 

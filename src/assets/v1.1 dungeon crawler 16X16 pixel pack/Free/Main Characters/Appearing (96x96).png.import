@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b06dftjg2f0u0"
-path="res://.godot/imported/Appearing (96x96).png-1be505ead0888f496f5c57fb80eadcf6.ctex"
+path="res://.godot/imported/Appearing (96x96).png-4383ca703a3f0ed0d70149deead5449c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Main Characters/Appearing (96x96).png"
-dest_files=["res://.godot/imported/Appearing (96x96).png-1be505ead0888f496f5c57fb80eadcf6.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Main Characters/Appearing (96x96).png"
+dest_files=["res://.godot/imported/Appearing (96x96).png-4383ca703a3f0ed0d70149deead5449c.ctex"]
 
 [params]
 

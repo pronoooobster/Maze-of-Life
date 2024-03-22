@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://belkh1bhqg3sg"
-path="res://.godot/imported/SDS_6x6.ttf-afdf40c871458097d600d67abbe68edf.fontdata"
+path="res://.godot/imported/SDS_6x6.ttf-9f753ff443df1052c100329c9983813e.fontdata"
 
 [deps]
 
-source_file="res://DawnLike/GUI/SDS_6x6.ttf"
-dest_files=["res://.godot/imported/SDS_6x6.ttf-afdf40c871458097d600d67abbe68edf.fontdata"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/GUI/SDS_6x6.ttf"
+dest_files=["res://.godot/imported/SDS_6x6.ttf-9f753ff443df1052c100329c9983813e.fontdata"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://m1nowgdqykcs"
-path="res://.godot/imported/Quadraped1.png-ea3694b1b1526aeba23ab9ae068566b6.ctex"
+path="res://.godot/imported/Quadraped1.png-60194732cc1cb95984bede1059ea7b3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Characters/Quadraped1.png"
-dest_files=["res://.godot/imported/Quadraped1.png-ea3694b1b1526aeba23ab9ae068566b6.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Characters/Quadraped1.png"
+dest_files=["res://.godot/imported/Quadraped1.png-60194732cc1cb95984bede1059ea7b3b.ctex"]
 
 [params]
 

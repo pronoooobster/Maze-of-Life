@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boa51jigj4r8"
-path="res://.godot/imported/Idle.png-078a0030184bf6d7cbf109415993bbdf.ctex"
+path="res://.godot/imported/Idle.png-4e2a51a15c6d54366180afe6e8a940ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Traps/Spike Head/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-078a0030184bf6d7cbf109415993bbdf.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Traps/Spike Head/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-4e2a51a15c6d54366180afe6e8a940ad.ctex"]
 
 [params]
 

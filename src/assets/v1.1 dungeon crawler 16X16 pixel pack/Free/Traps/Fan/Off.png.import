@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsa630tmit42l"
-path="res://.godot/imported/Off.png-28053f0f961e8444130e47ca4a5532d0.ctex"
+path="res://.godot/imported/Off.png-7f7325c063906c76b47f56b4cb17a684.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Traps/Fan/Off.png"
-dest_files=["res://.godot/imported/Off.png-28053f0f961e8444130e47ca4a5532d0.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Traps/Fan/Off.png"
+dest_files=["res://.godot/imported/Off.png-7f7325c063906c76b47f56b4cb17a684.ctex"]
 
 [params]
 

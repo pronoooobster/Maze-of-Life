@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtoio0elpuhh"
-path="res://.godot/imported/Run (32x32).png-fd724f2ab2c4f007251817039d2007b1.ctex"
+path="res://.godot/imported/Run (32x32).png-c9d424a176ab0f4e1286e9312a5e0ced.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Main Characters/Mask Dude/Run (32x32).png"
-dest_files=["res://.godot/imported/Run (32x32).png-fd724f2ab2c4f007251817039d2007b1.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Main Characters/Mask Dude/Run (32x32).png"
+dest_files=["res://.godot/imported/Run (32x32).png-c9d424a176ab0f4e1286e9312a5e0ced.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c18mkv504vspe"
-path="res://.godot/imported/Run (32x32).png-c3e94843143468e3b3edee378b7d3628.ctex"
+path="res://.godot/imported/Run (32x32).png-ae1d820e967a58734a72d09a54066156.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Main Characters/Pink Man/Run (32x32).png"
-dest_files=["res://.godot/imported/Run (32x32).png-c3e94843143468e3b3edee378b7d3628.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Main Characters/Pink Man/Run (32x32).png"
+dest_files=["res://.godot/imported/Run (32x32).png-ae1d820e967a58734a72d09a54066156.ctex"]
 
 [params]
 

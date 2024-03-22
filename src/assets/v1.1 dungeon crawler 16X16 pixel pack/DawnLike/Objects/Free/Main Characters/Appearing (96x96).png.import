@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1sw733culo2e"
-path="res://.godot/imported/Appearing (96x96).png-7f437af3acc2068553678010acae772d.ctex"
+path="res://.godot/imported/Appearing (96x96).png-fa5f4524819323a4883e3617e8c62e53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Main Characters/Appearing (96x96).png"
-dest_files=["res://.godot/imported/Appearing (96x96).png-7f437af3acc2068553678010acae772d.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Main Characters/Appearing (96x96).png"
+dest_files=["res://.godot/imported/Appearing (96x96).png-fa5f4524819323a4883e3617e8c62e53.ctex"]
 
 [params]
 

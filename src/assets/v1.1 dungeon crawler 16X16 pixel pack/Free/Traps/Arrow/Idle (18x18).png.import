@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://de2h3mac7d5q1"
-path="res://.godot/imported/Idle (18x18).png-5801ee074d0dc9394e012806d2c5fec7.ctex"
+path="res://.godot/imported/Idle (18x18).png-c780a3397f04837846e310d3011ccd52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Traps/Arrow/Idle (18x18).png"
-dest_files=["res://.godot/imported/Idle (18x18).png-5801ee074d0dc9394e012806d2c5fec7.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Traps/Arrow/Idle (18x18).png"
+dest_files=["res://.godot/imported/Idle (18x18).png-c780a3397f04837846e310d3011ccd52.ctex"]
 
 [params]
 

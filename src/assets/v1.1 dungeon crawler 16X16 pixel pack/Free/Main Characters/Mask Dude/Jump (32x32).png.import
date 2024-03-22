@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csq1myf2dyru4"
-path="res://.godot/imported/Jump (32x32).png-cdb29ec84dc29fcec17874fb7570422b.ctex"
+path="res://.godot/imported/Jump (32x32).png-c1800b9fd595c657f90d9fffbdc2732c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Main Characters/Mask Dude/Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-cdb29ec84dc29fcec17874fb7570422b.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Main Characters/Mask Dude/Jump (32x32).png"
+dest_files=["res://.godot/imported/Jump (32x32).png-c1800b9fd595c657f90d9fffbdc2732c.ctex"]
 
 [params]
 

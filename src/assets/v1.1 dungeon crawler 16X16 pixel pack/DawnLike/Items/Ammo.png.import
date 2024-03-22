@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmkqqehrpfv12"
-path="res://.godot/imported/Ammo.png-a108d43359bdb137d34f6b4d1788002a.ctex"
+path="res://.godot/imported/Ammo.png-de39932f140764d55cb0547d41fb245c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Items/Ammo.png"
-dest_files=["res://.godot/imported/Ammo.png-a108d43359bdb137d34f6b4d1788002a.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Items/Ammo.png"
+dest_files=["res://.godot/imported/Ammo.png-de39932f140764d55cb0547d41fb245c.ctex"]
 
 [params]
 

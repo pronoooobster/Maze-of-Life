@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cc3r4ialpqto3"
-path="res://.godot/imported/Top Hit (54x52).png-86980832b46f5647d6b34c0d0de20e02.ctex"
+path="res://.godot/imported/Top Hit (54x52).png-484118b3113bc3b35a412d851f84a3e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Traps/Spike Head/Top Hit (54x52).png"
-dest_files=["res://.godot/imported/Top Hit (54x52).png-86980832b46f5647d6b34c0d0de20e02.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Traps/Spike Head/Top Hit (54x52).png"
+dest_files=["res://.godot/imported/Top Hit (54x52).png-484118b3113bc3b35a412d851f84a3e6.ctex"]
 
 [params]
 

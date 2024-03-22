@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccpa4uq5o0oq4"
-path="res://.godot/imported/Hit (18x18).png-ec40792569fe8a2c13084a6570d88420.ctex"
+path="res://.godot/imported/Hit (18x18).png-d591bbbec6b76bab369316aa6c1f7810.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Traps/Arrow/Hit (18x18).png"
-dest_files=["res://.godot/imported/Hit (18x18).png-ec40792569fe8a2c13084a6570d88420.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Traps/Arrow/Hit (18x18).png"
+dest_files=["res://.godot/imported/Hit (18x18).png-d591bbbec6b76bab369316aa6c1f7810.ctex"]
 
 [params]
 

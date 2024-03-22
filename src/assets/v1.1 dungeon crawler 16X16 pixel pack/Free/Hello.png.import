@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgvpm46honpvc"
-path="res://.godot/imported/Hello.png-3325e1c28e0195c90b6fc5668592524a.ctex"
+path="res://.godot/imported/Hello.png-1eb10de73631ebcfc7c1a529cc74ed5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Hello.png"
-dest_files=["res://.godot/imported/Hello.png-3325e1c28e0195c90b6fc5668592524a.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Hello.png"
+dest_files=["res://.godot/imported/Hello.png-1eb10de73631ebcfc7c1a529cc74ed5e.ctex"]
 
 [params]
 

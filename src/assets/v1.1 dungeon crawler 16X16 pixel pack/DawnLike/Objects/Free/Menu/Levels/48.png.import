@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b647bdr7cmx5v"
-path="res://.godot/imported/48.png-3379f023df68f62feb90d4e5385a435c.ctex"
+path="res://.godot/imported/48.png-c57e4b6fb2590bf67b8f81f4753f15f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Menu/Levels/48.png"
-dest_files=["res://.godot/imported/48.png-3379f023df68f62feb90d4e5385a435c.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Menu/Levels/48.png"
+dest_files=["res://.godot/imported/48.png-c57e4b6fb2590bf67b8f81f4753f15f0.ctex"]
 
 [params]
 
