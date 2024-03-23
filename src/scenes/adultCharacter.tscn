@@ -139,9 +139,9 @@ script = ExtResource("1_7m568")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_gboma")
-animation = &"walking_E"
+animation = &"walking_W"
 autoplay = "standing_S"
-frame_progress = 0.685512
+frame_progress = 0.472516
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_pt887")
