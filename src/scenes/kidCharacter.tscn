@@ -1,0 +1,179 @@
+[gd_scene load_steps=17 format=3 uid="uid://3bouoe55uolp"]
+
+[ext_resource type="Texture2D" uid="uid://t5oy8k3jtil0" path="res://textures/characters/kid.png" id="2_ghvww"]
+
+[sub_resource type="GDScript" id="GDScript_aebu3"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
+
+
+func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtkta"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(16, 2, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owmve"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(32, 2, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xo5yy"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(0, 2, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wck1"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(48, 2, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1whs4"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(16, 19, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkrbf"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(16, 36, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6gxn"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(32, 19, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8tpb"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(32, 36, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwds0"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(0, 19, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qoqh8"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(0, 36, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2feoo"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(48, 19, 16, 15)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sesxl"]
+atlas = ExtResource("2_ghvww")
+region = Rect2(48, 36, 16, 15)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dx3p3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mtkta")
+}],
+"loop": true,
+"name": &"stand_E",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_owmve")
+}],
+"loop": true,
+"name": &"stand_N",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xo5yy")
+}],
+"loop": true,
+"name": &"stand_S",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wck1")
+}],
+"loop": true,
+"name": &"stand_W",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1whs4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rkrbf")
+}],
+"loop": true,
+"name": &"walk_E",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6gxn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8tpb")
+}],
+"loop": true,
+"name": &"walk_N",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iwds0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qoqh8")
+}],
+"loop": true,
+"name": &"walk_S",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2feoo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sesxl")
+}],
+"loop": true,
+"name": &"walk_W",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qve2x"]
+size = Vector2(12, 16)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = SubResource("GDScript_aebu3")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(32, 25)
+sprite_frames = SubResource("SpriteFrames_dx3p3")
+animation = &"walk_W"
+autoplay = "stand_S"
+frame_progress = 0.924326
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 25)
+shape = SubResource("RectangleShape2D_qve2x")
