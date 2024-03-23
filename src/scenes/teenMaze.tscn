@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://brutkw5a22mhl"]
 
-[ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/clouds/Clouds 1/1.png" id="1_r5hn6"]
-[ext_resource type="Texture2D" uid="uid://beakna3hi2t3v" path="res://textures/clouds/Clouds 1/2.png" id="2_uubhk"]
-[ext_resource type="Texture2D" uid="uid://fctiayc04uba" path="res://textures/clouds/Clouds 1/3.png" id="3_5d5v8"]
-[ext_resource type="Texture2D" uid="uid://ohhquvkxmohp" path="res://textures/clouds/Clouds 1/4.png" id="4_qgnsu"]
+[ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_r5hn6"]
+[ext_resource type="Texture2D" uid="uid://beakna3hi2t3v" path="res://textures/Clouds/Clouds 1/2.png" id="2_uubhk"]
+[ext_resource type="Texture2D" uid="uid://fctiayc04uba" path="res://textures/Clouds/Clouds 1/3.png" id="3_5d5v8"]
+[ext_resource type="Texture2D" uid="uid://ohhquvkxmohp" path="res://textures/Clouds/Clouds 1/4.png" id="4_qgnsu"]
 [ext_resource type="Texture2D" uid="uid://ck41tijrw3q4b" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="5_hvbal"]
 [ext_resource type="PackedScene" uid="uid://28rqsj4fprpn" path="res://scenes/adultCharacter.tscn" id="6_mgoaq"]
 
