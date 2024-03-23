@@ -1,5 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://bi0ljdc7g32tf"]
+[gd_scene load_steps=17 format=3 uid="uid://28rqsj4fprpn"]
 
+[ext_resource type="Script" path="res://scenes/adultCharacter.gd" id="1_7m568"]
 [ext_resource type="Texture2D" uid="uid://qp6udyp44hnq" path="res://textures/characters/adult.png" id="1_m5yf5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ps0o0"]
@@ -93,7 +94,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walking_E",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -104,7 +105,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walking_N",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -115,7 +116,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walking_S",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -126,19 +127,21 @@ animations = [{
 }],
 "loop": true,
 "name": &"walking_W",
-"speed": 3.0
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pt887"]
 size = Vector2(12, 16)
 
 [node name="AdultCharacter" type="CharacterBody2D"]
+script = ExtResource("1_7m568")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_gboma")
-animation = &"walking_S"
-frame_progress = 0.248403
+animation = &"walking_E"
+autoplay = "standing_S"
+frame_progress = 0.685512
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_pt887")
