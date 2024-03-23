@@ -129,7 +129,6 @@ z_index = 1
 position = Vector2(785, 273)
 scale = Vector2(2.235, 2.235)
 
-[node name="Camera2D" type="Camera2D" parent="AdultCharacter"]
-position = Vector2(0.894836, -1.78971)
-scale = Vector2(0.447427, 0.447427)
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(787, 269)
 zoom = Vector2(7, 7)
