@@ -1,6 +1,6 @@
 extends Area2D
 @onready var animated_sprite_2d = $AnimatedSprite2D
-@onready var collision_shape_2d = $CollisionShape2D
+@onready var collision_shape_2d = $Area2D/CollisionShape2D
 @onready var spike_timer = $spikeTimer
 @onready var timer = $Timer
 
@@ -16,7 +16,6 @@ func _process(delta):
 	pass
 
 func _on_timer_timeout():
-	print("time")
 	changeSpike()
 
 
@@ -33,5 +32,6 @@ func changeSpike():
 		isSpikeOpen = false
 
 
-
-	
+func _on_area_2d_body_entered(body):
+		if body.is_in_group("Player"):
+			get_tree().reload_current_scene()

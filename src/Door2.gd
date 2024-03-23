@@ -27,7 +27,7 @@ func _on_area_2d_body_entered(body):
 		is_in_zone = true
 
 func _on_area_2d_body_exited(body):
-	if body.name == "KidCharacter":
+	if body.is_in_group("Player"):
 		is_in_zone = false
 
 

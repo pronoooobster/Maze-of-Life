@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://1v22nstvuwkt"]
+[gd_scene load_steps=16 format=3 uid="uid://dd47mqldyev1n"]
 
 [ext_resource type="Texture2D" uid="uid://ce4v4mads2862" path="res://textures/characters/teen.png" id="1_6dj3o"]
 
@@ -132,7 +132,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_duuar"]
 size = Vector2(12, 17)
 
-[node name="TeenCharacter" type="CharacterBody2D"]
+[node name="TeenCharacter" type="CharacterBody2D" groups=["Player"]]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
