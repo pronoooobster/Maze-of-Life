@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://dsdm11yrakp2"]
+
+[ext_resource type="Script" path="res://scenes/spike.gd" id="1_54j07"]
+[ext_resource type="Texture2D" uid="uid://bdrqg7vjdd08t" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/spikes_anim_f0.png" id="1_ogyia"]
+[ext_resource type="Texture2D" uid="uid://dyfs154o2t2p6" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/spikes_anim_f5.png" id="2_wcr8n"]
+[ext_resource type="Texture2D" uid="uid://di0mhxujuwyq5" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/floor/spikes_anim_f7.png" id="4_xp58w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cjr8v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_xp58w")
+}],
+"loop": true,
+"name": &"active",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ogyia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_ogyia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_ogyia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wcr8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wcr8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wcr8n")
+}],
+"loop": false,
+"name": &"innactive",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wcr8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wcr8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wcr8n")
+}],
+"loop": false,
+"name": &"opening",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vxuv3"]
+size = Vector2(22, 22)
+
+[node name="Spike" type="Area2D"]
+texture_filter = 1
+position = Vector2(15, 12)
+script = ExtResource("1_54j07")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3, 3)
+scale = Vector2(1.375, 1.375)
+sprite_frames = SubResource("SpriteFrames_cjr8v")
+animation = &"innactive"
+autoplay = "innactive"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
+position = Vector2(-3, 3)
+shape = SubResource("RectangleShape2D_vxuv3")
+disabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="spikeTimer" type="Timer" parent="."]
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
