@@ -1,0 +1,98 @@
+[gd_scene load_steps=6 format=3 uid="uid://cpg8mij8rt1am"]
+
+[ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="1_onlq3"]
+[ext_resource type="Script" path="res://scenes/text.gd" id="1_pom7p"]
+
+[sub_resource type="Animation" id="Animation_qpwf7"]
+resource_name = "show"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_aipes"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hk0p0"]
+_data = {
+"RESET": SubResource("Animation_aipes"),
+"show": SubResource("Animation_qpwf7")
+}
+
+[node name="Node2D" type="Node2D"]
+z_index = 100
+script = ExtResource("1_pom7p")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../ColorRect")
+libraries = {
+"": SubResource("AnimationLibrary_hk0p0")
+}
+autoplay = "show"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 51.0
+offset_top = 378.0
+offset_right = 1090.0
+offset_bottom = 595.0
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 95.0
+offset_top = 442.0
+offset_right = 1024.0
+offset_bottom = 553.0
+theme_override_fonts/font = ExtResource("1_onlq3")
+text = "Welcome to the game!"
+horizontal_alignment = 1
+autowrap_mode = 3
+clip_text = true
+uppercase = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 597.0
+offset_top = 501.0
+offset_right = 662.0
+offset_bottom = 533.0
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_onlq3")
+text = "ok"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 451.0
+offset_top = 501.0
+offset_right = 555.0
+offset_bottom = 533.0
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_onlq3")
+text = "cancel"
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_left = 75.0
+offset_top = 403.0
+offset_right = 1063.0
+offset_bottom = 570.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
