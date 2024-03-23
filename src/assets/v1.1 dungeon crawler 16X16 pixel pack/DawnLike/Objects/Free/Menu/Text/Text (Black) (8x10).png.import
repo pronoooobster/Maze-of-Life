@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bphyph8kpw2ad"
-path="res://.godot/imported/Text (Black) (8x10).png-21a4bf1bc633b4f48118159b6df595e1.ctex"
+path="res://.godot/imported/Text (Black) (8x10).png-32cb9f9c1fc62e3afe7b89613ec40b7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Menu/Text/Text (Black) (8x10).png"
-dest_files=["res://.godot/imported/Text (Black) (8x10).png-21a4bf1bc633b4f48118159b6df595e1.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Menu/Text/Text (Black) (8x10).png"
+dest_files=["res://.godot/imported/Text (Black) (8x10).png-32cb9f9c1fc62e3afe7b89613ec40b7a.ctex"]
 
 [params]
 

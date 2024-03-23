@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmdl8emg2enrl"
-path="res://.godot/imported/12.png-8a237264e5798e37164b1975eec4fc10.ctex"
+path="res://.godot/imported/12.png-4ae48feefa9adb053da5c565225ea065.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Menu/Levels/12.png"
-dest_files=["res://.godot/imported/12.png-8a237264e5798e37164b1975eec4fc10.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Menu/Levels/12.png"
+dest_files=["res://.godot/imported/12.png-4ae48feefa9adb053da5c565225ea065.ctex"]
 
 [params]
 

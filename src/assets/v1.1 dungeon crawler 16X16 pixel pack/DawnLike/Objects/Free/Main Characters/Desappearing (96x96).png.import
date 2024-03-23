@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmmlqqdektj7h"
-path="res://.godot/imported/Desappearing (96x96).png-aaa10fecff00b7f57714662c8be54f19.ctex"
+path="res://.godot/imported/Desappearing (96x96).png-4f10c9962e7e0fa780848b6644e99708.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Main Characters/Desappearing (96x96).png"
-dest_files=["res://.godot/imported/Desappearing (96x96).png-aaa10fecff00b7f57714662c8be54f19.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Main Characters/Desappearing (96x96).png"
+dest_files=["res://.godot/imported/Desappearing (96x96).png-4f10c9962e7e0fa780848b6644e99708.ctex"]
 
 [params]
 

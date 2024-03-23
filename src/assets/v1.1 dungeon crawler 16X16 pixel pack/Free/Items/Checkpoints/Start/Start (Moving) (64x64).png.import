@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bg7h2h6kri8cb"
-path="res://.godot/imported/Start (Moving) (64x64).png-76de566b1ec431ad0609c445afed11da.ctex"
+path="res://.godot/imported/Start (Moving) (64x64).png-b878827ebe4b04cb9f5bf6316b17827e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Items/Checkpoints/Start/Start (Moving) (64x64).png"
-dest_files=["res://.godot/imported/Start (Moving) (64x64).png-76de566b1ec431ad0609c445afed11da.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Items/Checkpoints/Start/Start (Moving) (64x64).png"
+dest_files=["res://.godot/imported/Start (Moving) (64x64).png-b878827ebe4b04cb9f5bf6316b17827e.ctex"]
 
 [params]
 

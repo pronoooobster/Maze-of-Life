@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8wgs44fppa2k"
-path="res://.godot/imported/Rogue.png-61283c7fece0ab80a9d873c4767d64ea.ctex"
+path="res://.godot/imported/Rogue.png-1f4319f92417dc6fe9273661eb06783a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Commissions/Rogue.png"
-dest_files=["res://.godot/imported/Rogue.png-61283c7fece0ab80a9d873c4767d64ea.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Commissions/Rogue.png"
+dest_files=["res://.godot/imported/Rogue.png-1f4319f92417dc6fe9273661eb06783a.ctex"]
 
 [params]
 

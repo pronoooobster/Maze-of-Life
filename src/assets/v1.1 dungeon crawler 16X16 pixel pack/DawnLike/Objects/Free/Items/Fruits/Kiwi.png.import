@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1rtvu6q3lpl"
-path="res://.godot/imported/Kiwi.png-dbbd6b9d321ada4546edd3f7851c829d.ctex"
+path="res://.godot/imported/Kiwi.png-27c54dee23abdcfd76f02af6027c8424.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Items/Fruits/Kiwi.png"
-dest_files=["res://.godot/imported/Kiwi.png-dbbd6b9d321ada4546edd3f7851c829d.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Items/Fruits/Kiwi.png"
+dest_files=["res://.godot/imported/Kiwi.png-27c54dee23abdcfd76f02af6027c8424.ctex"]
 
 [params]
 

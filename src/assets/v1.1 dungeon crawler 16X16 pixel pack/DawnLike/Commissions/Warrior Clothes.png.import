@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccsah2pdjh2m6"
-path="res://.godot/imported/Warrior Clothes.png-6e35e98541f519a0abd305a295d5b358.ctex"
+path="res://.godot/imported/Warrior Clothes.png-520987405797def31546d8ed8654a423.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Commissions/Warrior Clothes.png"
-dest_files=["res://.godot/imported/Warrior Clothes.png-6e35e98541f519a0abd305a295d5b358.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Commissions/Warrior Clothes.png"
+dest_files=["res://.godot/imported/Warrior Clothes.png-520987405797def31546d8ed8654a423.ctex"]
 
 [params]
 

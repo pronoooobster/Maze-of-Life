@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbbjgv6qp5iln"
-path="res://.godot/imported/HitSide (22x22).png-653f69f8ddad927c667108a4e5ed4432.ctex"
+path="res://.godot/imported/HitSide (22x22).png-31056186605d5f111e8ced31d6fab5ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Traps/Blocks/HitSide (22x22).png"
-dest_files=["res://.godot/imported/HitSide (22x22).png-653f69f8ddad927c667108a4e5ed4432.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Traps/Blocks/HitSide (22x22).png"
+dest_files=["res://.godot/imported/HitSide (22x22).png-31056186605d5f111e8ced31d6fab5ef.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cny26v1ey5fl5"
-path="res://.godot/imported/Chest0.png-b7e718ccc1b535dae5f2e5f696533f57.ctex"
+path="res://.godot/imported/Chest0.png-d0b2e612affd69194cb9ec5e74916d57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Items/Chest0.png"
-dest_files=["res://.godot/imported/Chest0.png-b7e718ccc1b535dae5f2e5f696533f57.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Items/Chest0.png"
+dest_files=["res://.godot/imported/Chest0.png-d0b2e612affd69194cb9ec5e74916d57.ctex"]
 
 [params]
 

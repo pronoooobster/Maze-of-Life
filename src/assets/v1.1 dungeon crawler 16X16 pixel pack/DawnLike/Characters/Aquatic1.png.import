@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp8bun4bq6064"
-path="res://.godot/imported/Aquatic1.png-db13479abe998e89746a6642a8e4c308.ctex"
+path="res://.godot/imported/Aquatic1.png-e796ceb76d18d7ac51af979fa212218b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Characters/Aquatic1.png"
-dest_files=["res://.godot/imported/Aquatic1.png-db13479abe998e89746a6642a8e4c308.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Characters/Aquatic1.png"
+dest_files=["res://.godot/imported/Aquatic1.png-e796ceb76d18d7ac51af979fa212218b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bby8hassxts3w"
-path="res://.godot/imported/Hit (32x32).png-4919d7828983c2b7246a43974d7cc0cb.ctex"
+path="res://.godot/imported/Hit (32x32).png-7823ad0ac6992dad96f341725c685297.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Main Characters/Ninja Frog/Hit (32x32).png"
-dest_files=["res://.godot/imported/Hit (32x32).png-4919d7828983c2b7246a43974d7cc0cb.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Main Characters/Ninja Frog/Hit (32x32).png"
+dest_files=["res://.godot/imported/Hit (32x32).png-7823ad0ac6992dad96f341725c685297.ctex"]
 
 [params]
 

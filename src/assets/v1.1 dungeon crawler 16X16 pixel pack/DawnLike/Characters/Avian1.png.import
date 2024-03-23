@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c0msyghb8hijh"
-path="res://.godot/imported/Avian1.png-338e3053e4b28eb2cf2f2efc1c5f41f5.ctex"
+path="res://.godot/imported/Avian1.png-4839439ad65bc810bd58d36c364cc84a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Characters/Avian1.png"
-dest_files=["res://.godot/imported/Avian1.png-338e3053e4b28eb2cf2f2efc1c5f41f5.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Characters/Avian1.png"
+dest_files=["res://.godot/imported/Avian1.png-4839439ad65bc810bd58d36c364cc84a.ctex"]
 
 [params]
 

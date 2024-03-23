@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csup0eyal2ny0"
-path="res://.godot/imported/Money.png-995b6e9f9611619bea243f1cedc4cdd7.ctex"
+path="res://.godot/imported/Money.png-404d7196cf44c9f79aaa60c13c32a316.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Items/Money.png"
-dest_files=["res://.godot/imported/Money.png-995b6e9f9611619bea243f1cedc4cdd7.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Items/Money.png"
+dest_files=["res://.godot/imported/Money.png-404d7196cf44c9f79aaa60c13c32a316.ctex"]
 
 [params]
 

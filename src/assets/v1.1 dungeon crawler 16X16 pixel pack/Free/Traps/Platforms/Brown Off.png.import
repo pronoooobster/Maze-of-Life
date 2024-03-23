@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0iosxpoe0gmi"
-path="res://.godot/imported/Brown Off.png-0bde4fb02fb33e73d774b858e6b2513b.ctex"
+path="res://.godot/imported/Brown Off.png-03daa15eeeb2758982cafc413bd6e3ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Traps/Platforms/Brown Off.png"
-dest_files=["res://.godot/imported/Brown Off.png-0bde4fb02fb33e73d774b858e6b2513b.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Traps/Platforms/Brown Off.png"
+dest_files=["res://.godot/imported/Brown Off.png-03daa15eeeb2758982cafc413bd6e3ed.ctex"]
 
 [params]
 

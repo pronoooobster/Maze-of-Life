@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl5hgt3yfs5vn"
-path="res://.godot/imported/Jump (32x32).png-6b39a6700eebeb092d70a354d8180b90.ctex"
+path="res://.godot/imported/Jump (32x32).png-31f6be4437428cdce792189fe50fa87a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Main Characters/Virtual Guy/Jump (32x32).png"
-dest_files=["res://.godot/imported/Jump (32x32).png-6b39a6700eebeb092d70a354d8180b90.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Main Characters/Virtual Guy/Jump (32x32).png"
+dest_files=["res://.godot/imported/Jump (32x32).png-31f6be4437428cdce792189fe50fa87a.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3ky51sul66s0"
-path="res://.godot/imported/Achievements.png-d7897c52a67dc3b9523ebc3b250a45cc.ctex"
+path="res://.godot/imported/Achievements.png-d9892f4964b50db9ea95f71f79620293.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Menu/Buttons/Achievements.png"
-dest_files=["res://.godot/imported/Achievements.png-d7897c52a67dc3b9523ebc3b250a45cc.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Menu/Buttons/Achievements.png"
+dest_files=["res://.godot/imported/Achievements.png-d9892f4964b50db9ea95f71f79620293.ctex"]
 
 [params]
 

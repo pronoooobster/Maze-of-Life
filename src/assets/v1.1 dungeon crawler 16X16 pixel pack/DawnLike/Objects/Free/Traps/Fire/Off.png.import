@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlds3skaxjebl"
-path="res://.godot/imported/Off.png-d09b78b73ef486ecef0feb6eab41f51b.ctex"
+path="res://.godot/imported/Off.png-f274a2a904ca13dcd0ba2bc5abccf64e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Traps/Fire/Off.png"
-dest_files=["res://.godot/imported/Off.png-d09b78b73ef486ecef0feb6eab41f51b.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Traps/Fire/Off.png"
+dest_files=["res://.godot/imported/Off.png-f274a2a904ca13dcd0ba2bc5abccf64e.ctex"]
 
 [params]
 

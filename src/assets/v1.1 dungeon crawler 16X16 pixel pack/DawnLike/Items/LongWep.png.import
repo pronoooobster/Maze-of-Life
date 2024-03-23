@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cc3je4lgnaruf"
-path="res://.godot/imported/LongWep.png-5d36debb9c7afac35382bb9769fa105a.ctex"
+path="res://.godot/imported/LongWep.png-f2ac4021c10cefe4ad20b12cee8201dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Items/LongWep.png"
-dest_files=["res://.godot/imported/LongWep.png-5d36debb9c7afac35382bb9769fa105a.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Items/LongWep.png"
+dest_files=["res://.godot/imported/LongWep.png-f2ac4021c10cefe4ad20b12cee8201dd.ctex"]
 
 [params]
 

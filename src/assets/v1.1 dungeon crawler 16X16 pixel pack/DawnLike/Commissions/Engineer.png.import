@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b80xpf7popu3v"
-path="res://.godot/imported/Engineer.png-981a755cebbccc5b593e2a57fc1a77f2.ctex"
+path="res://.godot/imported/Engineer.png-d20bd7dcae37f9845d69c75f06829e6a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Commissions/Engineer.png"
-dest_files=["res://.godot/imported/Engineer.png-981a755cebbccc5b593e2a57fc1a77f2.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Commissions/Engineer.png"
+dest_files=["res://.godot/imported/Engineer.png-d20bd7dcae37f9845d69c75f06829e6a.ctex"]
 
 [params]
 

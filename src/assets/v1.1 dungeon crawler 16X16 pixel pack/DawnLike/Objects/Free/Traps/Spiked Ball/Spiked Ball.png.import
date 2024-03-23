@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gf3oxmilcj48"
-path="res://.godot/imported/Spiked Ball.png-db0893f77d34c4d03c585510b07e978c.ctex"
+path="res://.godot/imported/Spiked Ball.png-d88ddd399452163c572775f649b49c56.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Traps/Spiked Ball/Spiked Ball.png"
-dest_files=["res://.godot/imported/Spiked Ball.png-db0893f77d34c4d03c585510b07e978c.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Traps/Spiked Ball/Spiked Ball.png"
+dest_files=["res://.godot/imported/Spiked Ball.png-d88ddd399452163c572775f649b49c56.ctex"]
 
 [params]
 

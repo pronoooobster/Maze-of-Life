@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl5jay8ydfgst"
-path="res://.godot/imported/Sand Particle.png-0b25fa0f6d999d7dd61588cbddd0d685.ctex"
+path="res://.godot/imported/Sand Particle.png-76b86597a8b53865437f66f97e813ca8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Traps/Sand Mud Ice/Sand Particle.png"
-dest_files=["res://.godot/imported/Sand Particle.png-0b25fa0f6d999d7dd61588cbddd0d685.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Traps/Sand Mud Ice/Sand Particle.png"
+dest_files=["res://.godot/imported/Sand Particle.png-76b86597a8b53865437f66f97e813ca8.ctex"]
 
 [params]
 

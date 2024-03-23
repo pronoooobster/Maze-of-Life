@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://sxs0850i4aqq"
-path="res://.godot/imported/End (Pressed) (64x64).png-af7aee76d13479962866db96538cef88.ctex"
+path="res://.godot/imported/End (Pressed) (64x64).png-84a63cc5e2207cc1fb5fc7b0d59d4fcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Items/Checkpoints/End/End (Pressed) (64x64).png"
-dest_files=["res://.godot/imported/End (Pressed) (64x64).png-af7aee76d13479962866db96538cef88.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Items/Checkpoints/End/End (Pressed) (64x64).png"
+dest_files=["res://.godot/imported/End (Pressed) (64x64).png-84a63cc5e2207cc1fb5fc7b0d59d4fcf.ctex"]
 
 [params]
 

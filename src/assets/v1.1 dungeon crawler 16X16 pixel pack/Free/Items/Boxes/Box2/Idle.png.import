@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fxta6vdwn738"
-path="res://.godot/imported/Idle.png-c6f62632f14ec69dd5ae92c1b80a731f.ctex"
+path="res://.godot/imported/Idle.png-2ff23f960c87a18a200d88d4746103e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Items/Boxes/Box2/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-c6f62632f14ec69dd5ae92c1b80a731f.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Items/Boxes/Box2/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-2ff23f960c87a18a200d88d4746103e2.ctex"]
 
 [params]
 

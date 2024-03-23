@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6upkuq4ylmws"
-path="res://.godot/imported/MedWep.png-f7f069b6d49a134ed555a7f2a63dc068.ctex"
+path="res://.godot/imported/MedWep.png-889badce5f3582a191a80b64ff728859.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Items/MedWep.png"
-dest_files=["res://.godot/imported/MedWep.png-f7f069b6d49a134ed555a7f2a63dc068.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Items/MedWep.png"
+dest_files=["res://.godot/imported/MedWep.png-889badce5f3582a191a80b64ff728859.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djsvy1bkbdqes"
-path="res://.godot/imported/Blink (42x42).png-2b98377b4622cc5aa2d9c09ecdbb38fb.ctex"
+path="res://.godot/imported/Blink (42x42).png-29402c5477d39d2fa02b637d71ea5ea8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Traps/Rock Head/Blink (42x42).png"
-dest_files=["res://.godot/imported/Blink (42x42).png-2b98377b4622cc5aa2d9c09ecdbb38fb.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Traps/Rock Head/Blink (42x42).png"
+dest_files=["res://.godot/imported/Blink (42x42).png-29402c5477d39d2fa02b637d71ea5ea8.ctex"]
 
 [params]
 

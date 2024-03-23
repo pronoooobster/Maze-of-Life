@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ccfehpu0que1l"
-path="res://.godot/imported/Checkpoint (No Flag).png-a055b961882e4c665b66ec613b93baf3.ctex"
+path="res://.godot/imported/Checkpoint (No Flag).png-e7799735b235d9b3ea74823141a32462.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DawnLike/Objects/Free/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png"
-dest_files=["res://.godot/imported/Checkpoint (No Flag).png-a055b961882e4c665b66ec613b93baf3.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Objects/Free/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png"
+dest_files=["res://.godot/imported/Checkpoint (No Flag).png-e7799735b235d9b3ea74823141a32462.ctex"]
 
 [params]
 

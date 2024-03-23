@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7yf6twrqrlhn"
-path="res://.godot/imported/Ice Particle.png-382be04081d8365bbb2d8287abe00e3a.ctex"
+path="res://.godot/imported/Ice Particle.png-045dc9959fcfd9a3a20721bf9ee142bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Traps/Sand Mud Ice/Ice Particle.png"
-dest_files=["res://.godot/imported/Ice Particle.png-382be04081d8365bbb2d8287abe00e3a.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Traps/Sand Mud Ice/Ice Particle.png"
+dest_files=["res://.godot/imported/Ice Particle.png-045dc9959fcfd9a3a20721bf9ee142bf.ctex"]
 
 [params]
 

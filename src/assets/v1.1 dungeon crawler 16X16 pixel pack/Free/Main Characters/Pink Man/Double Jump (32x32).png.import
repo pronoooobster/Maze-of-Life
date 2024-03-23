@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cok3h6y2jxkfq"
-path="res://.godot/imported/Double Jump (32x32).png-66a46af982f2e5e9335ee0798e3bb8ba.ctex"
+path="res://.godot/imported/Double Jump (32x32).png-f74d5004ee793a0a2d5fbed3b0e9b3f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Free/Main Characters/Pink Man/Double Jump (32x32).png"
-dest_files=["res://.godot/imported/Double Jump (32x32).png-66a46af982f2e5e9335ee0798e3bb8ba.ctex"]
+source_file="res://assets/v1.1 dungeon crawler 16X16 pixel pack/Free/Main Characters/Pink Man/Double Jump (32x32).png"
+dest_files=["res://.godot/imported/Double Jump (32x32).png-f74d5004ee793a0a2d5fbed3b0e9b3f4.ctex"]
 
 [params]
 
