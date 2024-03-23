@@ -78,7 +78,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_ugwsy")
 }],
-"loop": false,
+"loop": true,
 "name": &"doorUnlocking",
 "speed": 7.0
 }]
@@ -89,9 +89,8 @@ size = Vector2(31, 19)
 [sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_2yy0o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d4dpr"]
-radius = 21.0
 
-[node name="Door" type="StaticBody2D"]
+[node name="StaticBody2D" type="StaticBody2D"]
 script = ExtResource("1_qxo0i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -99,7 +98,7 @@ texture_filter = 1
 position = Vector2(0.5, -1)
 scale = Vector2(1.03125, 1)
 sprite_frames = SubResource("SpriteFrames_no46c")
-animation = &"doorUnlocking"
+animation = &"doorClosed"
 autoplay = "doorClosed"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -111,12 +110,8 @@ stream = SubResource("AudioStreamMicrophone_2yy0o")
 autoplay = true
 bus = &"Record"
 
-[node name="playerDetector" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 position = Vector2(1, 38)
 
-[node name="playerDetect" type="CollisionShape2D" parent="playerDetector"]
-position = Vector2(-1, -1)
+[node name="playerDetect" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_d4dpr")
-
-[connection signal="body_entered" from="playerDetector" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="playerDetector" to="." method="_on_area_2d_body_exited"]
