@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://bl23hbyt4cky7"]
+[gd_scene load_steps=13 format=3 uid="uid://brutkw5a22mhl"]
 
 [ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_r5hn6"]
+[ext_resource type="Script" path="res://scenes/kidMaze.gd" id="1_yumy2"]
 [ext_resource type="Texture2D" uid="uid://beakna3hi2t3v" path="res://textures/Clouds/Clouds 1/2.png" id="2_uubhk"]
 [ext_resource type="Texture2D" uid="uid://fctiayc04uba" path="res://textures/Clouds/Clouds 1/3.png" id="3_5d5v8"]
 [ext_resource type="Texture2D" uid="uid://ohhquvkxmohp" path="res://textures/Clouds/Clouds 1/4.png" id="4_qgnsu"]
@@ -67,6 +68,9 @@ texture = ExtResource("5_hvbal")
 [sub_resource type="TileSet" id="TileSet_l3ayf"]
 sources/0 = SubResource("TileSetAtlasSource_ncrxn")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uika8"]
+size = Vector2(40, 37)
+
 [sub_resource type="Gradient" id="Gradient_2hd78"]
 offsets = PackedFloat32Array(0, 0.727273)
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0.156863)
@@ -79,6 +83,7 @@ fill = 1
 fill_from = Vector2(0.481651, 0.474771)
 
 [node name="Node2" type="Node"]
+script = ExtResource("1_yumy2")
 
 [node name="BackgroundSky" type="TextureRect" parent="."]
 texture_filter = 1
@@ -137,10 +142,16 @@ layer_2/name = "frontfront"
 layer_2/z_index = 2
 layer_2/tile_data = PackedInt32Array(1376282, 131072, 7, 1376283, 131072, 7, 1376284, 131072, 7, 1376285, 131072, 7, 1376286, 131072, 7, 1376287, 131072, 7, 1376288, 131072, 7, 1376289, 131072, 7, 1376290, 131072, 7, 1376291, 131072, 7, 1376292, 131072, 7, 1703961, 131072, 7, 1703962, 131072, 7, 1703963, 131072, 7, 1703964, 131072, 7, 1769501, 65536, 7, 1703971, 131072, 7, 1703972, 131072, 7, 1703973, 131072, 7, 1703974, 131072, 7, 1835038, 65536, 7, 1835041, 327680, 7, 1769506, 327680, 7, 2490399, 458752, 6, 2490400, 524288, 6, 2359334, 131072, 7, 2359333, 131072, 7, 2162721, 131072, 7, 2162722, 131072, 7, 2162723, 131072, 7, 2162724, 131072, 7, 1572903, 131072, 7, 1572904, 131072, 7, 1572905, 131072, 7, 1572906, 131072, 7, 1572907, 131072, 7, 1572908, 131072, 7, 1638439, 196608, 5, 1441828, 262144, 5, 1900577, 196608, 5, 2228260, 262144, 5, 2293796, 262144, 5, 2359332, 262144, 5)
 
+[node name="EndgameCollider" type="Area2D" parent="TileMap"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/EndgameCollider"]
+position = Vector2(512.5, 605.5)
+shape = SubResource("RectangleShape2D_uika8")
+
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
-[node name="AdultCharacter" parent="." instance=ExtResource("6_mgoaq")]
+[node name="AdultCharacter" parent="." groups=["Player"] instance=ExtResource("6_mgoaq")]
 z_index = 1
 position = Vector2(785, 273)
 scale = Vector2(2.235, 2.235)
@@ -154,3 +165,5 @@ zoom = Vector2(7, 7)
 position = Vector2(-0.447421, 0.447427)
 scale = Vector2(0.21064, 0.18639)
 texture = SubResource("GradientTexture2D_eqtdt")
+
+[connection signal="body_entered" from="TileMap/EndgameCollider" to="." method="_on_endgame_collider_body_entered"]
