@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc62240ckqdwm"
+path="res://.godot/imported/🍩 Happy Spring No Copyright Free Playful & Cute LoFi Background Music for Vlog - _Donut_ by Lukrembo.mp3-65f47fea0399e35e6c95d0da3b5f0b52.mp3str"
+
+[deps]
+
+source_file="res://🍩 Happy Spring No Copyright Free Playful & Cute LoFi Background Music for Vlog - _Donut_ by Lukrembo.mp3"
+dest_files=["res://.godot/imported/🍩 Happy Spring No Copyright Free Playful & Cute LoFi Background Music for Vlog - _Donut_ by Lukrembo.mp3-65f47fea0399e35e6c95d0da3b5f0b52.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
