@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://b00wnxwosqe1f"]
+[gd_scene load_steps=42 format=3 uid="uid://b00wnxwosqe1f"]
 
 [ext_resource type="Texture2D" uid="uid://day61nlwy7xpk" path="res://textures/Clouds/Clouds 5/1.png" id="1_4xsuj"]
 [ext_resource type="Script" path="res://scenes/adultMaze.gd" id="1_xvxgp"]
@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://h6suctf5rab2" path="res://assets/Tileset/Tileset.png" id="8_0ukav"]
 [ext_resource type="PackedScene" uid="uid://c64nujfs0ltc0" path="res://scenes/adultCharacter.tscn" id="9_mhnrf"]
 [ext_resource type="Texture2D" uid="uid://bc6fu54ao1p3i" path="res://assets/Free 2/Items/Checkpoints/End/End (Pressed) (64x64).png" id="11_g4ch5"]
+[ext_resource type="Script" path="res://scenes/AnimatedText1.gd" id="12_i202n"]
+[ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="13_gqynr"]
+[ext_resource type="Script" path="res://scenes/AnimatedText2.gd" id="14_cgt4k"]
+[ext_resource type="Script" path="res://scenes/AnimatedText3.gd" id="15_6xphh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ncrxn"]
 texture = ExtResource("5_you4o")
@@ -16727,6 +16731,137 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ciw5c"]
 size = Vector2(48, 34)
 
+[sub_resource type="Animation" id="Animation_48gs5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_mg1ef"]
+resource_name = "new_animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b1iqk"]
+_data = {
+"RESET": SubResource("Animation_48gs5"),
+"new_animation": SubResource("Animation_mg1ef")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_47f8g"]
+size = Vector2(82.5, 72)
+
+[sub_resource type="Animation" id="Animation_7vggt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_3demn"]
+resource_name = "new_animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lx7fq"]
+_data = {
+"RESET": SubResource("Animation_7vggt"),
+"new_animation": SubResource("Animation_3demn")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j2n2c"]
+size = Vector2(82.5, 71)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wmko"]
+size = Vector2(82.5, 71)
+
 [node name="Node" type="Node"]
 script = ExtResource("1_xvxgp")
 
@@ -16790,7 +16925,6 @@ layer_2/z_index = 4
 layer_2/tile_data = PackedInt32Array(3735618, 786433, 40, 3801154, 786433, 41, 1638442, 655361, 44, 1703978, 655361, 45, 1769514, 655361, 46, 1638443, 720897, 44, 1703979, 720897, 45, 1769515, 720897, 46, 3932197, 196609, 8, 3932198, 196609, 8, 3932199, 196609, 8, 3932200, 196609, 8, 3932201, 196609, 8, 3932202, 196609, 8, 3932203, 196609, 8, 3604539, 65537, 6, 3670075, 65537, 7, 3539004, 131073, 5, 3604540, 131073, 6, 3670076, 262145, 7, 3604545, 1900547, 7, 3604543, 1900547, 8, 3670081, 1900547, 7, 3735617, 1900547, 7, 3801153, 1900547, 7, 3670079, 1900547, 8, 3735615, 1900547, 8, 3801151, 1900547, 8, 3801147, 131072, 7, 3670024, 131072, 7, 3670025, 131072, 7, 2818098, 131072, 7, 2818099, 131072, 7, 589822, 1769475, 25, 655358, 1769475, 26, 1507327, 262145, 7, 1572863, 262145, 7, 1638399, 262145, 7, 1703935, 262145, 7, 1638402, 262145, 7, 1572866, 262145, 7, 1507330, 262145, 7, 1441794, 262145, 7, 983096, 3538947, 3, 983097, 3538947, 3, 983098, 3538947, 3, 1048632, 3538947, 4, 1048633, 3538947, 4, 1048634, 3538947, 4, 3932196, 196609, 8, 852018, 196609, 8, 852019, 196609, 8, 852020, 196609, 8, 852021, 196609, 8, 852005, 786433, 45, 786490, 131072, 7, 786491, 131072, 7, 4522051, 131072, 7, 1179668, 131072, 7, 1179669, 131072, 7, 3342344, 131072, 7, 3342345, 131072, 7, 4521986, 131072, 7, 4521987, 131072, 7, 3539003, 65537, 5, 4259888, 196609, 9, 4259889, 196609, 9)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
 [node name="AdultCharacter" parent="." instance=ExtResource("9_mhnrf")]
@@ -16798,7 +16932,6 @@ z_index = 3
 position = Vector2(771, 228)
 
 [node name="PointLight2D" type="PointLight2D" parent="AdultCharacter"]
-visible = false
 position = Vector2(10, 11)
 scale = Vector2(0.47078, 0.416582)
 texture = SubResource("GradientTexture2D_lk80v")
@@ -16824,5 +16957,194 @@ autoplay = "default"
 z_index = 12
 position = Vector2(-1467, -183)
 shape = SubResource("RectangleShape2D_ciw5c")
+
+[node name="WelcomeText" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="WelcomeText"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedText" type="Node" parent="WelcomeText/Panel"]
+script = ExtResource("12_i202n")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="WelcomeText/Panel/AnimatedText"]
+root_node = NodePath("../ColorRect/Label")
+libraries = {
+"": SubResource("AnimationLibrary_b1iqk")
+}
+
+[node name="ColorRect" type="ColorRect" parent="WelcomeText/Panel/AnimatedText"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 315.0
+offset_top = -174.0
+offset_right = -315.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="Label" type="Label" parent="WelcomeText/Panel/AnimatedText/ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = -92.0
+offset_right = -43.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("13_gqynr")
+theme_override_font_sizes/font_size = 35
+text = "Typical Monday in the office...
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Area2D" type="Area2D" parent="WelcomeText/Panel/AnimatedText"]
+position = Vector2(-1, 25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WelcomeText/Panel/AnimatedText/Area2D"]
+z_index = 5
+position = Vector2(782, 312)
+shape = SubResource("RectangleShape2D_47f8g")
+
+[node name="Text2" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Text2"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedText2" type="Node" parent="Text2/Panel"]
+script = ExtResource("14_cgt4k")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Text2/Panel/AnimatedText2"]
+root_node = NodePath("../ColorRect/Label2")
+libraries = {
+"": SubResource("AnimationLibrary_lx7fq")
+}
+
+[node name="ColorRect" type="ColorRect" parent="Text2/Panel/AnimatedText2"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 315.0
+offset_top = -174.0
+offset_right = -315.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="Label2" type="Label" parent="Text2/Panel/AnimatedText2/ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = -92.0
+offset_right = -43.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("13_gqynr")
+theme_override_font_sizes/font_size = 35
+text = "Doesn't feel like the correct way..
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Area2DText2" type="Area2D" parent="Text2/Panel/AnimatedText2"]
+position = Vector2(-1174, 710)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Text2/Panel/AnimatedText2/Area2DText2"]
+z_index = 5
+position = Vector2(901.25, 404.5)
+shape = SubResource("RectangleShape2D_j2n2c")
+
+[node name="Text3" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Text3"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedText3" type="Node" parent="Text3/Panel"]
+script = ExtResource("15_6xphh")
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="Text3/Panel/AnimatedText3"]
+root_node = NodePath("../ColorRect/Label2")
+libraries = {
+"": SubResource("AnimationLibrary_lx7fq")
+}
+
+[node name="ColorRect" type="ColorRect" parent="Text3/Panel/AnimatedText3"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 315.0
+offset_top = -174.0
+offset_right = -315.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="Label2" type="Label" parent="Text3/Panel/AnimatedText3/ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = -92.0
+offset_right = -43.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("13_gqynr")
+theme_override_font_sizes/font_size = 35
+text = "It's hard, no?
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Area2DText3" type="Area2D" parent="Text3/Panel/AnimatedText3"]
+position = Vector2(160, 673)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Text3/Panel/AnimatedText3/Area2DText3"]
+z_index = 5
+position = Vector2(718, 802.5)
+shape = SubResource("RectangleShape2D_0wmko")
 
 [connection signal="body_entered" from="Finish" to="." method="_on_finish_body_entered"]

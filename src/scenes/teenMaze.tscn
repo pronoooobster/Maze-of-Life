@@ -4442,7 +4442,7 @@ size = Vector2(48, 34)
 
 [sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_fa2t4"]
 
-[sub_resource type="Animation" id="Animation_48gs5"]
+[sub_resource type="Animation" id="Animation_7vggt"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -4469,7 +4469,7 @@ tracks/1/keys = {
 "values": [false]
 }
 
-[sub_resource type="Animation" id="Animation_mg1ef"]
+[sub_resource type="Animation" id="Animation_3demn"]
 resource_name = "new_animation"
 length = 5.0
 tracks/0/type = "value"
@@ -4497,10 +4497,10 @@ tracks/1/keys = {
 "values": [true, false]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_b1iqk"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lx7fq"]
 _data = {
-"RESET": SubResource("Animation_48gs5"),
-"new_animation": SubResource("Animation_mg1ef")
+"RESET": SubResource("Animation_7vggt"),
+"new_animation": SubResource("Animation_3demn")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1876w"]
@@ -4841,7 +4841,7 @@ script = ExtResource("17_630i4")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WelcomeText/Panel/AnimatedText"]
 root_node = NodePath("../ColorRect/Label")
 libraries = {
-"": SubResource("AnimationLibrary_b1iqk")
+"": SubResource("AnimationLibrary_lx7fq")
 }
 
 [node name="ColorRect" type="ColorRect" parent="WelcomeText/Panel/AnimatedText"]
@@ -4904,7 +4904,7 @@ script = ExtResource("18_sxp2f")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Text2/Panel/AnimatedText2"]
 root_node = NodePath("../ColorRect/Label2")
 libraries = {
-"": SubResource("AnimationLibrary_b1iqk")
+"": SubResource("AnimationLibrary_lx7fq")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Text2/Panel/AnimatedText2"]
@@ -4967,7 +4967,7 @@ script = ExtResource("19_0svtq")
 [node name="AnimationPlayer3" type="AnimationPlayer" parent="Text3/Panel/AnimatedText3"]
 root_node = NodePath("../ColorRect/Label2")
 libraries = {
-"": SubResource("AnimationLibrary_b1iqk")
+"": SubResource("AnimationLibrary_lx7fq")
 }
 
 [node name="ColorRect" type="ColorRect" parent="Text3/Panel/AnimatedText3"]
