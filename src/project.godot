@@ -11,13 +11,17 @@ config_version=5
 [application]
 
 config/name="Maze of Life"
-run/main_scene="res://scenes/teenMaze.tscn"
+run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
+[audio]
+
+driver/enable_input=true
+
 [display]
 
-window/size/mode=2
+window/size/mode=3
 
 [input]
 

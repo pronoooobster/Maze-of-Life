@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://28rqsj4fprpn"]
+[gd_scene load_steps=17 format=3 uid="uid://c64nujfs0ltc0"]
 
 [ext_resource type="Script" path="res://scenes/adultCharacter.gd" id="1_7m568"]
 [ext_resource type="Texture2D" uid="uid://qp6udyp44hnq" path="res://textures/characters/adult.png" id="1_m5yf5"]
@@ -133,7 +133,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pt887"]
 size = Vector2(12, 16)
 
-[node name="AdultCharacter" type="CharacterBody2D"]
+[node name="AdultCharacter" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_7m568")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

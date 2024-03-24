@@ -1,0 +1,25 @@
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://bqmbh7tg6i016"]
+
+[sub_resource type="AudioEffectRecord" id="AudioEffectRecord_q8fk4"]
+resource_name = "Record"
+
+[sub_resource type="AudioEffectRecord" id="AudioEffectRecord_s8in0"]
+resource_name = "Record"
+
+[resource]
+bus/1/name = &"RecordOutput"
+bus/1/solo = false
+bus/1/mute = true
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = &"Master"
+bus/2/name = &"Record"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"RecordOutput"
+bus/2/effect/0/effect = SubResource("AudioEffectRecord_q8fk4")
+bus/2/effect/0/enabled = true
+bus/2/effect/1/effect = SubResource("AudioEffectRecord_s8in0")
+bus/2/effect/1/enabled = false
