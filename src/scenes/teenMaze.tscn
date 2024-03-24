@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bl23hbyt4cky7"]
+[gd_scene load_steps=34 format=3 uid="uid://bl23hbyt4cky7"]
 
 [ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_ie38n"]
 [ext_resource type="Script" path="res://scenes/teenMaze.gd" id="1_puctp"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bc6fu54ao1p3i" path="res://assets/Free 2/Items/Checkpoints/End/End (Pressed) (64x64).png" id="13_e636d"]
 [ext_resource type="PackedScene" uid="uid://c0ux1jd0kj8pt" path="res://scenes/soundSpike.tscn" id="14_jp64j"]
 [ext_resource type="PackedScene" uid="uid://dnc2tqgv6ab4m" path="res://scenes/door.tscn" id="15_yu6di"]
+[ext_resource type="PackedScene" uid="uid://dsdm11yrakp2" path="res://scenes/spike.tscn" id="16_ho4ov"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ncrxn"]
 texture = ExtResource("5_yd1tb")
@@ -4485,6 +4486,16 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_oh850")
 
+[node name="Clouds3" type="TextureRect" parent="BackgroundSky"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_oh850")
+
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 position = Vector2(-306, -270)
@@ -4621,10 +4632,124 @@ stream = SubResource("AudioStreamMicrophone_fa2t4")
 autoplay = true
 bus = &"Record"
 
-[node name="soundSpike" parent="." instance=ExtResource("14_jp64j")]
-position = Vector2(830, 484)
-
 [node name="Door" parent="." instance=ExtResource("15_yu6di")]
-position = Vector2(710, 453)
+position = Vector2(786, 611)
+rotation = 3.11192
+scale = Vector2(1.8, 1.8)
+
+[node name="Door2" parent="." instance=ExtResource("15_yu6di")]
+position = Vector2(303, 355)
+rotation = 0.0314159
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(-169, 676)
+rotation = 3.14334
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike2" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(252, 683)
+rotation = 3.14334
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike3" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(289, 827)
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike7" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(518, 2197)
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike8" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(282, 2435)
+rotation = 3.11192
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike11" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(87, 1958)
+rotation = 3.11192
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike13" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(250, 1958)
+rotation = 3.11192
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike14" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(250, 1989)
+rotation = 3.11192
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike12" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(88, 1987)
+rotation = 3.11192
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike5" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(-413, 1174)
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike6" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(-412, 1142)
+scale = Vector2(1.8, 1.8)
+
+[node name="Spike4" parent="." instance=ExtResource("16_ho4ov")]
+z_index = 1
+position = Vector2(-169, 707)
+rotation = 3.14334
+scale = Vector2(1.8, 1.8)
+
+[node name="soundSpike2" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(-130, 824)
+
+[node name="soundSpike3" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(-98, 824)
+
+[node name="soundSpike4" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(-129, 855)
+
+[node name="soundSpike5" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(-97, 855)
+
+[node name="soundSpike6" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(287, 1271)
+
+[node name="soundSpike8" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(-608, 1464)
+
+[node name="soundSpike9" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(-579, 1464)
+
+[node name="soundSpike10" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(575, 1946)
+
+[node name="soundSpike11" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(606, 1945)
+
+[node name="soundSpike12" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(608, 2009)
+
+[node name="soundSpike13" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(575, 2010)
+
+[node name="soundSpike14" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(575, 2073)
+
+[node name="soundSpike15" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(607, 2073)
+
+[node name="soundSpike7" parent="." instance=ExtResource("14_jp64j")]
+position = Vector2(316, 1270)
 
 [connection signal="body_entered" from="Finish" to="." method="_on_finish_body_entered"]
