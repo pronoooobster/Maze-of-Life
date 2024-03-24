@@ -9,7 +9,7 @@ func _ready():
 func _process(delta):
 	pass
 
-@onready var gameManager = %GameM
+@onready var gameManager = %Game
 
 func _on_body_entered(body):
 	if body.name == "AdultCharacter":

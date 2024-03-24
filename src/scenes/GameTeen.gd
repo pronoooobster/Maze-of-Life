@@ -10,7 +10,7 @@ func _ready():
 func _process(delta):
 	pass
 
-@onready var points_label = %LabelTeen
+@onready var points_label = %Label
 var points = 0
 func add_point():
 	points += 1
