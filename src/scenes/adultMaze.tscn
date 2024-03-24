@@ -1,19 +1,17 @@
-[gd_scene load_steps=18 format=3 uid="uid://b00wnxwosqe1f"]
-
+[gd_scene load_steps=20 format=3 uid="uid://b00wnxwosqe1f"]
 
 [ext_resource type="Texture2D" uid="uid://day61nlwy7xpk" path="res://textures/Clouds/Clouds 5/1.png" id="1_4xsuj"]
 [ext_resource type="Script" path="res://scenes/adultMaze.gd" id="1_xvxgp"]
 [ext_resource type="Texture2D" uid="uid://c1temhyyrou5d" path="res://textures/Clouds/Clouds 5/2.png" id="2_ehbbr"]
 [ext_resource type="Texture2D" uid="uid://dqyg0tjpsfomx" path="res://textures/Clouds/Clouds 5/3.png" id="3_uxyat"]
 [ext_resource type="Texture2D" uid="uid://bfwotetgflnlt" path="res://textures/Clouds/Clouds 5/4.png" id="4_5jaxm"]
-
 [ext_resource type="Texture2D" uid="uid://ck41tijrw3q4b" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="5_you4o"]
 [ext_resource type="Texture2D" uid="uid://x8d68colgob1" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="6_8adf7"]
 [ext_resource type="Texture2D" uid="uid://2vvgqm2fqtk6" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png" id="7_tqadi"]
 [ext_resource type="Texture2D" uid="uid://h6suctf5rab2" path="res://assets/Tileset/Tileset.png" id="8_0ukav"]
-
 [ext_resource type="PackedScene" uid="uid://c64nujfs0ltc0" path="res://scenes/adultCharacter.tscn" id="9_mhnrf"]
-
+[ext_resource type="AudioStream" uid="uid://3hrr7qtuxb8h" path="res://Chill LoFi Hip Hop No Copyright Free Calm Instrumental Background Music _ Better Days by Emre Bayrak.mp3" id="11_cqff2"]
+[ext_resource type="Script" path="res://scenes/AudioStreamPlayer2.gd" id="12_hs2d5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ncrxn"]
 texture = ExtResource("5_you4o")
@@ -16743,3 +16741,8 @@ texture = SubResource("GradientTexture2D_lk80v")
 position = Vector2(10, 12)
 scale = Vector2(0.999999, 0.999999)
 zoom = Vector2(7, 7)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_cqff2")
+autoplay = true
+script = ExtResource("12_hs2d5")
