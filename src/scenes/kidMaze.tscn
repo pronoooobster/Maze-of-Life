@@ -16615,6 +16615,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimatedText" type="Node" parent="WelcomeText/Panel"]
 script = ExtResource("6_worqs")
@@ -16676,6 +16677,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimatedText2" type="Node" parent="Text2/Panel"]
 script = ExtResource("8_r0035")
@@ -16737,6 +16739,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimatedText3" type="Node" parent="Text3/Panel"]
 script = ExtResource("9_5vrt3")

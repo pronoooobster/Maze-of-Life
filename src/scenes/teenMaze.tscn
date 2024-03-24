@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://bl23hbyt4cky7"]
+[gd_scene load_steps=43 format=3 uid="uid://bl23hbyt4cky7"]
 
 [ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_ie38n"]
 [ext_resource type="Script" path="res://scenes/teenMaze.gd" id="1_puctp"]
@@ -9,13 +9,16 @@
 [ext_resource type="Texture2D" uid="uid://x8d68colgob1" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="6_rueny"]
 [ext_resource type="Texture2D" uid="uid://2vvgqm2fqtk6" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png" id="7_tj0sa"]
 [ext_resource type="PackedScene" uid="uid://1v22nstvuwkt" path="res://scenes/teenCharacter.tscn" id="8_0tp8j"]
-[ext_resource type="PackedScene" path="res://scenes/book.tscn" id="9_xtq70"]
+[ext_resource type="PackedScene" uid="uid://bsnao12uu4i1t" path="res://scenes/book.tscn" id="9_xtq70"]
 [ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="11_7eega"]
 [ext_resource type="Script" path="res://scenes/NewGame.gd" id="11_nd5e0"]
 [ext_resource type="Texture2D" uid="uid://bc6fu54ao1p3i" path="res://assets/Free 2/Items/Checkpoints/End/End (Pressed) (64x64).png" id="13_e636d"]
 [ext_resource type="PackedScene" uid="uid://c0ux1jd0kj8pt" path="res://scenes/soundSpike.tscn" id="14_jp64j"]
 [ext_resource type="PackedScene" uid="uid://dnc2tqgv6ab4m" path="res://scenes/door.tscn" id="15_yu6di"]
 [ext_resource type="PackedScene" uid="uid://dsdm11yrakp2" path="res://scenes/spike.tscn" id="16_ho4ov"]
+[ext_resource type="Script" path="res://scenes/AnimatedText1.gd" id="17_630i4"]
+[ext_resource type="Script" path="res://scenes/AnimatedText2.gd" id="18_sxp2f"]
+[ext_resource type="Script" path="res://scenes/AnimatedText3.gd" id="19_0svtq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ncrxn"]
 texture = ExtResource("5_yd1tb")
@@ -4439,6 +4442,76 @@ size = Vector2(48, 34)
 
 [sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_fa2t4"]
 
+[sub_resource type="Animation" id="Animation_48gs5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_mg1ef"]
+resource_name = "new_animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b1iqk"]
+_data = {
+"RESET": SubResource("Animation_48gs5"),
+"new_animation": SubResource("Animation_mg1ef")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1876w"]
+size = Vector2(82.5, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ddh3o"]
+size = Vector2(82.5, 71)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4o5ig"]
+size = Vector2(82.5, 71)
+
 [node name="Node" type="Node"]
 script = ExtResource("1_puctp")
 
@@ -4515,7 +4588,6 @@ layer_3/z_index = 2
 layer_3/tile_data = PackedInt32Array(3211268, 393217, 13, 3211269, 393217, 13, 3211270, 393217, 13, 3211271, 393217, 13)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
 [node name="TeenCharacter" parent="." instance=ExtResource("8_0tp8j")]
@@ -4751,5 +4823,194 @@ position = Vector2(607, 2073)
 
 [node name="soundSpike7" parent="." instance=ExtResource("14_jp64j")]
 position = Vector2(316, 1270)
+
+[node name="WelcomeText" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="WelcomeText"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedText" type="Node" parent="WelcomeText/Panel"]
+script = ExtResource("17_630i4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="WelcomeText/Panel/AnimatedText"]
+root_node = NodePath("../ColorRect/Label")
+libraries = {
+"": SubResource("AnimationLibrary_b1iqk")
+}
+
+[node name="ColorRect" type="ColorRect" parent="WelcomeText/Panel/AnimatedText"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 315.0
+offset_top = -174.0
+offset_right = -315.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="Label" type="Label" parent="WelcomeText/Panel/AnimatedText/ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = -92.0
+offset_right = -43.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("11_7eega")
+theme_override_font_sizes/font_size = 35
+text = "The fire reacts to your voice!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Area2D" type="Area2D" parent="WelcomeText/Panel/AnimatedText"]
+position = Vector2(-898, 469)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WelcomeText/Panel/AnimatedText/Area2D"]
+z_index = 5
+position = Vector2(782, 312)
+shape = SubResource("RectangleShape2D_1876w")
+
+[node name="Text2" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Text2"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedText2" type="Node" parent="Text2/Panel"]
+script = ExtResource("18_sxp2f")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Text2/Panel/AnimatedText2"]
+root_node = NodePath("../ColorRect/Label2")
+libraries = {
+"": SubResource("AnimationLibrary_b1iqk")
+}
+
+[node name="ColorRect" type="ColorRect" parent="Text2/Panel/AnimatedText2"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 315.0
+offset_top = -174.0
+offset_right = -315.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="Label2" type="Label" parent="Text2/Panel/AnimatedText2/ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = -92.0
+offset_right = -43.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("11_7eega")
+theme_override_font_sizes/font_size = 35
+text = "Oh! The lunch room..
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Area2DText2" type="Area2D" parent="Text2/Panel/AnimatedText2"]
+position = Vector2(-1014, 714)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Text2/Panel/AnimatedText2/Area2DText2"]
+z_index = 5
+position = Vector2(901.25, 404.5)
+shape = SubResource("RectangleShape2D_ddh3o")
+
+[node name="Text3" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="Text3"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedText3" type="Node" parent="Text3/Panel"]
+script = ExtResource("19_0svtq")
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="Text3/Panel/AnimatedText3"]
+root_node = NodePath("../ColorRect/Label2")
+libraries = {
+"": SubResource("AnimationLibrary_b1iqk")
+}
+
+[node name="ColorRect" type="ColorRect" parent="Text3/Panel/AnimatedText3"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 315.0
+offset_top = -174.0
+offset_right = -315.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="Label2" type="Label" parent="Text3/Panel/AnimatedText3/ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = -92.0
+offset_right = -43.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("11_7eega")
+theme_override_font_sizes/font_size = 35
+text = "The principals office..
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Area2DText3" type="Area2D" parent="Text3/Panel/AnimatedText3"]
+position = Vector2(-1143, 890)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Text3/Panel/AnimatedText3/Area2DText3"]
+z_index = 5
+position = Vector2(718, 802.5)
+shape = SubResource("RectangleShape2D_4o5ig")
 
 [connection signal="body_entered" from="Finish" to="." method="_on_finish_body_entered"]
