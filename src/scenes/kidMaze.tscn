@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://brutkw5a22mhl"]
+[gd_scene load_steps=45 format=3 uid="uid://brutkw5a22mhl"]
 
 [ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_r5hn6"]
 [ext_resource type="Script" path="res://scenes/kidMaze.gd" id="1_yumy2"]
@@ -19,6 +19,8 @@
 [ext_resource type="PackedScene" uid="uid://bsr8ptaw3s2eh" path="res://scenes/kidCharacter.tscn" id="16_jkecc"]
 [ext_resource type="PackedScene" uid="uid://dsdm11yrakp2" path="res://scenes/spike.tscn" id="18_qpn3n"]
 [ext_resource type="PackedScene" uid="uid://dnc2tqgv6ab4m" path="res://scenes/door.tscn" id="20_doa00"]
+[ext_resource type="AudioStream" uid="uid://cyirkkk05r0h3" path="res://Happy Lofi No Copyright Free Soft Upbeat Background Music For Video _ Love in Japan by Milky Wayvers.mp3" id="20_elst1"]
+[ext_resource type="Script" path="res://scenes/AudioStreamPlayer1.gd" id="20_qbmp4"]
 
 [sub_resource type="Animation" id="Animation_48gs5"]
 length = 0.001
@@ -16826,20 +16828,12 @@ color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
 [node name="PointsUI2I" type="CanvasLayer" parent="."]
 
-[node name="Panel" type="Panel" parent="PointsUI2I"]
-offset_right = 700.0
-offset_bottom = 204.0
-
-[node name="Label" type="Label" parent="PointsUI2I/Panel"]
+[node name="Label" type="Label" parent="PointsUI2I"]
 unique_name_in_owner = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_right = 503.0
+offset_bottom = 167.0
 theme_override_fonts/font = ExtResource("11_c0vjp")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 36
 text = "Points: 0"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -16949,5 +16943,10 @@ z_index = 2
 position = Vector2(717, 837)
 rotation = 3.18174
 scale = Vector2(1.8, 1.8)
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20_elst1")
+autoplay = true
+script = ExtResource("20_qbmp4")
 
 [connection signal="body_entered" from="TileMap/EndgameCollider" to="." method="_on_endgame_collider_body_entered"]
