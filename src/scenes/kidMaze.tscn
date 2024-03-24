@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://bl23hbyt4cky7"]
+[gd_scene load_steps=43 format=3 uid="uid://brutkw5a22mhl"]
 
 [ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_r5hn6"]
 [ext_resource type="Script" path="res://scenes/kidMaze.gd" id="1_yumy2"]
@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://h6suctf5rab2" path="res://assets/Tileset/Tileset.png" id="8_xtm3d"]
 [ext_resource type="Script" path="res://scenes/AnimatedText3.gd" id="9_5vrt3"]
 [ext_resource type="Texture2D" uid="uid://bw4oxj2mg4ue4" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/full spritesheet.png" id="9_i0iyk"]
-[ext_resource type="PackedScene" path="res://scenes/pineapple.tscn" id="10_dh07d"]
+[ext_resource type="PackedScene" uid="uid://cdbx5gu4fwe4r" path="res://scenes/pineapple.tscn" id="10_dh07d"]
 [ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="11_c0vjp"]
 [ext_resource type="Script" path="res://scenes/GameM.gd" id="12_yuhh4"]
 [ext_resource type="Texture2D" uid="uid://bc6fu54ao1p3i" path="res://assets/Free 2/Items/Checkpoints/End/End (Pressed) (64x64).png" id="13_d1chd"]
@@ -82,7 +82,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_daw1l"]
-size = Vector2(61, 11)
+size = Vector2(82.5, 71)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ncrxn"]
 texture = ExtResource("5_hvbal")
@@ -16653,7 +16653,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("11_c0vjp")
 theme_override_font_sizes/font_size = 35
-text = "Hello world!
+text = "Use WASD to move!
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -16714,7 +16714,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("11_c0vjp")
 theme_override_font_sizes/font_size = 35
-text = "Hello world! This is text 2
+text = "There are some spikes ahead!
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -16725,7 +16725,7 @@ visible_ratio = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Text2/Panel/AnimatedText2/Area2DText2"]
 z_index = 5
-position = Vector2(912, 429)
+position = Vector2(901.25, 404.5)
 shape = SubResource("RectangleShape2D_daw1l")
 
 [node name="Text3" type="CanvasLayer" parent="."]
@@ -16741,7 +16741,7 @@ grow_vertical = 0
 [node name="AnimatedText3" type="Node" parent="Text3/Panel"]
 script = ExtResource("9_5vrt3")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Text3/Panel/AnimatedText3"]
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="Text3/Panel/AnimatedText3"]
 root_node = NodePath("../ColorRect/Label2")
 libraries = {
 "": SubResource("AnimationLibrary_b1iqk")
@@ -16775,7 +16775,7 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("11_c0vjp")
 theme_override_font_sizes/font_size = 35
-text = "Successfully finished level 1!
+text = "This game uses your voice!
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -16783,10 +16783,11 @@ visible_characters = 0
 visible_ratio = 0.0
 
 [node name="Area2DText3" type="Area2D" parent="Text3/Panel/AnimatedText3"]
+position = Vector2(0, -17)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Text3/Panel/AnimatedText3/Area2DText3"]
 z_index = 5
-position = Vector2(718, 813)
+position = Vector2(718, 802.5)
 shape = SubResource("RectangleShape2D_daw1l")
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -16817,7 +16818,6 @@ position = Vector2(512.5, 605.5)
 shape = SubResource("RectangleShape2D_uika8")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 z_index = -4
 color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
