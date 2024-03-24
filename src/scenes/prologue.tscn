@@ -1,0 +1,180 @@
+[gd_scene load_steps=11 format=3 uid="uid://chea4bff5cd7a"]
+
+[ext_resource type="Texture2D" uid="uid://5j741scq2eus" path="res://textures/Clouds/Clouds 3/1.png" id="1_7cnrc"]
+[ext_resource type="Texture2D" uid="uid://byamem7052iap" path="res://textures/Clouds/Clouds 3/2.png" id="2_4o8qj"]
+[ext_resource type="Texture2D" uid="uid://ce0k7idn47vfh" path="res://textures/Clouds/Clouds 3/3.png" id="3_pp8aj"]
+[ext_resource type="Texture2D" uid="uid://dsxkb8l4vricf" path="res://textures/Clouds/Clouds 3/4.png" id="4_hxiuc"]
+[ext_resource type="Script" path="res://scenes/AnimatedText.gd" id="5_k755y"]
+[ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="6_4bw53"]
+
+[sub_resource type="Animation" id="Animation_48gs5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_mg1ef"]
+resource_name = "new_animation"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b1iqk"]
+_data = {
+"RESET": SubResource("Animation_48gs5"),
+"new_animation": SubResource("Animation_mg1ef")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gb7a4"]
+size = Vector2(61, 11)
+
+[node name="Node" type="Node"]
+
+[node name="BackgroundSky" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.04, 1.04)
+texture = ExtResource("1_7cnrc")
+
+[node name="Stars" type="TextureRect" parent="BackgroundSky"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4o8qj")
+
+[node name="Clouds1" type="TextureRect" parent="BackgroundSky"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_pp8aj")
+
+[node name="Clouds2" type="TextureRect" parent="BackgroundSky"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.609756
+offset_bottom = 0.609741
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_hxiuc")
+
+[node name="WelcomeText" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="WelcomeText"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedText" type="Node" parent="WelcomeText/Panel"]
+script = ExtResource("5_k755y")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="WelcomeText/Panel/AnimatedText"]
+root_node = NodePath("../ColorRect/Label")
+libraries = {
+"": SubResource("AnimationLibrary_b1iqk")
+}
+
+[node name="ColorRect" type="ColorRect" parent="WelcomeText/Panel/AnimatedText"]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 184.0
+offset_top = -235.0
+offset_right = -193.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.0784314, 0.0784314, 0.0784314, 1)
+
+[node name="Label" type="Label" parent="WelcomeText/Panel/AnimatedText/ColorRect"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 39.0
+offset_top = -156.0
+offset_right = -43.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("6_4bw53")
+theme_override_font_sizes/font_size = 35
+text = "On 24-03-2024,
+a child was born..."
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="Area2D" type="Area2D" parent="WelcomeText/Panel/AnimatedText"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WelcomeText/Panel/AnimatedText/Area2D"]
+z_index = 5
+position = Vector2(782, 312.5)
+shape = SubResource("RectangleShape2D_gb7a4")
+
+[connection signal="animation_finished" from="WelcomeText/Panel/AnimatedText/AnimationPlayer" to="WelcomeText/Panel/AnimatedText" method="_on_animation_player_animation_finished"]
