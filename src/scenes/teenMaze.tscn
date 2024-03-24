@@ -4426,7 +4426,6 @@ layer_3/z_index = 2
 layer_3/tile_data = PackedInt32Array(3211268, 393217, 13, 3211269, 393217, 13, 3211270, 393217, 13, 3211271, 393217, 13)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
 [node name="TeenCharacter" parent="." instance=ExtResource("8_0tp8j")]
