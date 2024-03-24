@@ -131,17 +131,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pt887"]
-size = Vector2(12, 16)
+size = Vector2(23.5, 22)
 
 [node name="AdultCharacter" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_7m568")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+position = Vector2(12, 11.25)
+scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_gboma")
 animation = &"walking_W"
 autoplay = "standing_S"
 frame_progress = 0.324152
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12.25, 14)
 shape = SubResource("RectangleShape2D_pt887")
