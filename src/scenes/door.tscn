@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dnc2tqgv6ab4m"]
+[gd_scene load_steps=20 format=3 uid="uid://dnc2tqgv6ab4m"]
 
 [ext_resource type="Script" path="res://Door2.gd" id="1_qxo0i"]
 [ext_resource type="Texture2D" uid="uid://bqlpibmgi54t" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_closed.png" id="2_gi2ti"]
@@ -86,8 +86,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_flfps"]
 size = Vector2(31, 19)
 
-[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_2yy0o"]
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_d4dpr"]
 radius = 21.0
 
@@ -105,11 +103,6 @@ autoplay = "doorClosed"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 6.5)
 shape = SubResource("RectangleShape2D_flfps")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = SubResource("AudioStreamMicrophone_2yy0o")
-autoplay = true
-bus = &"Record"
 
 [node name="playerDetector" type="Area2D" parent="."]
 position = Vector2(1, 38)

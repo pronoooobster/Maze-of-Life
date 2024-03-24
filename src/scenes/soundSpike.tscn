@@ -1,9 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://w7i2dplegpav"]
+[gd_scene load_steps=10 format=3 uid="uid://c0ux1jd0kj8pt"]
 
 [ext_resource type="Script" path="res://scenes/soundSpike.gd" id="1_d0gm1"]
 [ext_resource type="Texture2D" uid="uid://dysqtjx58lvfj" path="res://assets/traps/Fire_Trap.png" id="2_qnds7"]
-
-[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_tse5s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x5ft3"]
 atlas = ExtResource("2_qnds7")
@@ -58,11 +56,6 @@ size = Vector2(26, 23)
 
 [node name="soundSpike" type="StaticBody2D"]
 script = ExtResource("1_d0gm1")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = SubResource("AudioStreamMicrophone_tse5s")
-autoplay = true
-bus = &"Record"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 3

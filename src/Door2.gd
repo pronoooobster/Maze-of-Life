@@ -12,18 +12,17 @@ var isOpen: bool = false
 # Called when the node enters the scene tree for the first time.
 	# Set the microphone to capture audio input
 func _ready():
-	record_bus_index = AudioServer.get_bus_index('Record')	
+	pass
 	
 func _process(float) -> void:
-	sample = AudioServer.get_bus_peak_volume_left_db(record_bus_index, 0)
-	print(sample)
-	print(is_in_zone)
-	if is_in_zone and sample > loudnessThreshold:
+	var sample
+	
+	if is_in_zone and get_node("/root/Node").sample > loudnessThreshold:
 		unlock()
 		isOpen = true
 	
 func _on_area_2d_body_entered(body):
-	if body.name == "AdultCharacter":
+	if body.is_in_group("Player"):
 		is_in_zone = true
 
 func _on_area_2d_body_exited(body):
@@ -32,7 +31,7 @@ func _on_area_2d_body_exited(body):
 
 
 func unlock():
-	if isOpen == false and sample > loudnessThreshold:
+	if isOpen == false and get_node("/root/Node").sample > loudnessThreshold:
 		animated_sprite_2d.animation = "doorUnlocking"
 		await animated_sprite_2d.animation_finished
 		animated_sprite_2d.animation = "doorOpen"
