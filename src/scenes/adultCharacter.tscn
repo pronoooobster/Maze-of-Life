@@ -141,7 +141,7 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_gboma")
 animation = &"walking_W"
 autoplay = "standing_S"
-frame_progress = 0.472516
+frame_progress = 0.324152
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_pt887")

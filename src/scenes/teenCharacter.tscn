@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://dd47mqldyev1n"]
+[gd_scene load_steps=17 format=3 uid="uid://drggy2iv5phjs"]
 
 [ext_resource type="Texture2D" uid="uid://ce4v4mads2862" path="res://textures/characters/teen.png" id="1_6dj3o"]
+[ext_resource type="Script" path="res://scenes/teenCharacter.gd" id="1_sie57"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_g8gkn"]
 atlas = ExtResource("1_6dj3o")
@@ -130,16 +131,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_duuar"]
-size = Vector2(12, 17)
+size = Vector2(28, 33)
 
 [node name="TeenCharacter" type="CharacterBody2D" groups=["Player"]]
+script = ExtResource("1_sie57")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
+position = Vector2(8.5, 8.5)
+scale = Vector2(2.0625, 2.0625)
 sprite_frames = SubResource("SpriteFrames_lkh4t")
-animation = &"walking_S"
-frame_progress = 0.82563
+animation = &"standing_S"
+autoplay = "standing_S"
+frame_progress = 0.421861
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.5)
+position = Vector2(8, 8.5)
 shape = SubResource("RectangleShape2D_duuar")
