@@ -5758,7 +5758,7 @@ shape = SubResource("RectangleShape2D_uika8")
 z_index = -4
 color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
-[node name="AdultCharacter" parent="." groups=["Player"] instance=ExtResource("6_mgoaq")]
+[node name="AdultCharacter" parent="." instance=ExtResource("6_mgoaq")]
 z_index = 1
 position = Vector2(785, 273)
 scale = Vector2(2.235, 2.235)
