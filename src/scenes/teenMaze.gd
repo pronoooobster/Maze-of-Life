@@ -9,4 +9,4 @@ func _on_finish_body_entered(body):
 # Function to switch to a new scene
 func switch_to_new_scene():
 	# Change the scene
-	get_tree().change_scene_to_file("res://scenes/adultMaze.tscn")
+	get_tree().change_scene_to_file("res://scenes/TeenToAdult.tscn")
