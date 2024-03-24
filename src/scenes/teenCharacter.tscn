@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://drggy2iv5phjs"]
+[gd_scene load_steps=17 format=3 uid="uid://1v22nstvuwkt"]
 
 [ext_resource type="Texture2D" uid="uid://ce4v4mads2862" path="res://textures/characters/teen.png" id="1_6dj3o"]
 [ext_resource type="Script" path="res://scenes/teenCharacter.gd" id="1_sie57"]
