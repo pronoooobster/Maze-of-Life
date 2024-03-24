@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://bsr8ptaw3s2eh"]
 
-[ext_resource type="Script" path="res://scenes/kidCharacter.gd" id="1_5sil4"]
+[ext_resource type="Script" path="res://scenes/kidCharacter.gd" id="1_5mvps"]
 [ext_resource type="Texture2D" uid="uid://t5oy8k3jtil0" path="res://textures/characters/kid.png" id="2_ghvww"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mtkta"]
@@ -131,20 +131,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qve2x"]
-size = Vector2(23, 26)
+size = Vector2(15, 12.25)
 
 [node name="KidCharacter" type="CharacterBody2D" groups=["Player"]]
-script = SubResource("GDScript_aebu3")
+script = ExtResource("1_5mvps")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(37.6, 30.25)
-scale = Vector2(1.7, 1.7)
+position = Vector2(34.9333, 27.75)
+scale = Vector2(1.36667, 1.36667)
 sprite_frames = SubResource("SpriteFrames_dx3p3")
-animation = &"walk_S"
+animation = &"walk_W"
 autoplay = "stand_S"
-frame_progress = 0.801961
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(37.5, 30)
+position = Vector2(35.5, 29)
 shape = SubResource("RectangleShape2D_qve2x")
