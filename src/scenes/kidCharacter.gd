@@ -9,20 +9,20 @@ func _physics_process(delta):
 	
 	#Animations
 	if direction == Vector2.LEFT:
-		sprite_2d.animation = "walking_W"
+		sprite_2d.animation = "walk_W"
 	elif direction == Vector2.RIGHT:
-		sprite_2d.animation = "walking_E"	
+		sprite_2d.animation = "walk_E"	
 	elif direction == Vector2.UP:
-		sprite_2d.animation = "walking_N"
+		sprite_2d.animation = "walk_N"
 	elif direction == Vector2.DOWN:
-		sprite_2d.animation = "walking_S"
+		sprite_2d.animation = "walk_S"
 	elif direction == Vector2.LEFT + Vector2.UP:  # Diagonal left-up
-		sprite_2d.animation = "walking_W"
+		sprite_2d.aniamtion = "walk_W"
 	elif direction == Vector2.RIGHT + Vector2.UP:  # Diagonal right-up
-		sprite_2d.animation = "walking_E"
+		sprite_2d.animation = "walk_E"
 	elif direction == Vector2.LEFT + Vector2.DOWN:  # Diagonal left-down
-		sprite_2d.animation = "walking_S"
+		sprite_2d.animation = "walk_S"
 	elif direction == Vector2.RIGHT + Vector2.DOWN:  # Diagonal right-down
-		sprite_2d.animation = "walking_S"
+		sprite_2d.animation = "walk_S"
 
 	move_and_slide()
