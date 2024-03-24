@@ -1,13 +1,13 @@
 [gd_scene load_steps=15 format=3 uid="uid://bl23hbyt4cky7"]
 
-[ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_ie38n"]
-[ext_resource type="Texture2D" uid="uid://beakna3hi2t3v" path="res://textures/Clouds/Clouds 1/2.png" id="2_ynqcp"]
-[ext_resource type="Texture2D" uid="uid://fctiayc04uba" path="res://textures/Clouds/Clouds 1/3.png" id="3_38jin"]
-[ext_resource type="Texture2D" uid="uid://ohhquvkxmohp" path="res://textures/Clouds/Clouds 1/4.png" id="4_oh850"]
+[ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/clouds/Clouds 1/1.png" id="1_ie38n"]
+[ext_resource type="Texture2D" uid="uid://beakna3hi2t3v" path="res://textures/clouds/Clouds 1/2.png" id="2_ynqcp"]
+[ext_resource type="Texture2D" uid="uid://fctiayc04uba" path="res://textures/clouds/Clouds 1/3.png" id="3_38jin"]
+[ext_resource type="Texture2D" uid="uid://ohhquvkxmohp" path="res://textures/clouds/Clouds 1/4.png" id="4_oh850"]
 [ext_resource type="Texture2D" uid="uid://ck41tijrw3q4b" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="5_yd1tb"]
 [ext_resource type="Texture2D" uid="uid://x8d68colgob1" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="6_rueny"]
 [ext_resource type="Texture2D" uid="uid://2vvgqm2fqtk6" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png" id="7_tj0sa"]
-[ext_resource type="PackedScene" uid="uid://drggy2iv5phjs" path="res://scenes/teenCharacter.tscn" id="8_0tp8j"]
+[ext_resource type="PackedScene" uid="uid://1v22nstvuwkt" path="res://scenes/teenCharacter.tscn" id="8_0tp8j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ncrxn"]
 texture = ExtResource("5_yd1tb")
