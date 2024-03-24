@@ -10,6 +10,6 @@
   - https://limezu.itch.io/moderninteriors
 - Sky stuff: https://free-game-assets.itch.io/free-sky-with-clouds-background-pixel-art-set
 
-  ## Music
+## Music
 
 - Playlist: https://www.youtube.com/playlist?list=PLRPR8uJQx5tHZXO06KtUrdMhbeKiPwDoM
