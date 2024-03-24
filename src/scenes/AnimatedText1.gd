@@ -12,7 +12,8 @@ func _play_animation(body):
 	print('show text')
 	#$Area2D.body_entered.Disconnect(_play_animation)  
 	#$Area2D.disconnect('body_entered', self, '_play_animation')
-	$AnimationPlayer.play('new_animation')
+	if body.is_in_group("Player"):
+		$AnimationPlayer.play('new_animation')
 	
 
 

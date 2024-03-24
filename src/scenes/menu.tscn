@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://kb15ckf731cw"]
+[gd_scene load_steps=7 format=3 uid="uid://ue4i1mov73r1"]
 
 [ext_resource type="Texture2D" uid="uid://cspv16jlpb5b7" path="res://textures/Clouds/Clouds 4/1.png" id="1_41lfx"]
 [ext_resource type="Script" path="res://scenes/menu.gd" id="1_unchw"]
