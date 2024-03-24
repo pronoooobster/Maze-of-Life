@@ -12,7 +12,7 @@ func _process(delta):
 @onready var gameManager = %GameM
 
 func _on_body_entered(body):
-	if body.name == "AdultCharacter":
+	if body.name == "KidCharacter":
 			queue_free()
 			gameManager.add_point()
 	

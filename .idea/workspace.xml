@@ -4,33 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16e93dc7-b695-46d7-a5b3-1bb09a4121f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Door2.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Tileset/Tileset.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Tileset/Tileset.png.import" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/dpcomic.tres" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/dpcomic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/fonts/dpcomic.ttf.import" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/interior free/interior free.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/interior free/interior free.png.import" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/interior free/read me.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/babyDoor.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/default_bus_layout.tres" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/credits.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/credits.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/doo42F7.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/door.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/kidMaze.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/menu.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/menu.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/spike.gd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/spike.tscn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scenes/stand.gd" afterDir="false" />
+    <list default="true" id="16e93dc7-b695-46d7-a5b3-1bb09a4121f9" name="Changes" comment="merge branch">
       <change beforePath="$PROJECT_DIR$/src/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/src/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/kidCharacter.gd" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/kidCharacter.gd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/kidCharacter.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/kidCharacter.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/kidMaze.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/kidMaze.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/teenCharacter.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/teenCharacter.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/teenMaze.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/teenMaze.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 1/1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 1/1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 1/2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 1/2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 1/3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 1/3.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 1/4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 1/4.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 2/1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 2/1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 2/2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 2/2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 2/3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 2/3.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 2/4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 2/4.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 3/1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 3/1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 3/2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 3/2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 3/3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 3/3.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 3/4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 3/4.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 4/1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 4/1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 4/2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 4/2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 4/3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 4/3.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 4/4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 4/4.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/3.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/4.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/5.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 5/5.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/3.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/4.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/5.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/5.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/6.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 6/6.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 7/1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 7/1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 7/2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 7/2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 7/3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 7/3.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 7/4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 7/4.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/3.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/3.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/4.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/4.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/5.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/5.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/6.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/src/textures/Clouds/Clouds 8/6.png.import" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +64,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Maze-of-Life" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Maze-of-Life" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,10 +101,23 @@
       <option name="presentableId" value="Default" />
       <updated>1711218426966</updated>
       <workItem from="1711218429995" duration="1010000" />
+      <workItem from="1711285232041" duration="430000" />
     </task>
+    <task id="LOCAL-00001" summary="merge branch">
+      <created>1711285422461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711285422461</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="merge branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge branch" />
   </component>
 </project>
