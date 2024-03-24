@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://x8d68colgob1" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="6_rueny"]
 [ext_resource type="Texture2D" uid="uid://2vvgqm2fqtk6" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png" id="7_tj0sa"]
 [ext_resource type="PackedScene" uid="uid://1v22nstvuwkt" path="res://scenes/teenCharacter.tscn" id="8_0tp8j"]
-[ext_resource type="PackedScene" path="res://scenes/book.tscn" id="9_xtq70"]
+[ext_resource type="PackedScene" uid="uid://bsnao12uu4i1t" path="res://scenes/book.tscn" id="9_xtq70"]
 [ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="11_7eega"]
 [ext_resource type="Script" path="res://scenes/NewGame.gd" id="11_nd5e0"]
 [ext_resource type="Texture2D" uid="uid://bc6fu54ao1p3i" path="res://assets/Free 2/Items/Checkpoints/End/End (Pressed) (64x64).png" id="13_e636d"]
