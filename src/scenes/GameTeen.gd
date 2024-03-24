@@ -1,19 +1,17 @@
-extends Area2D
+extends Node
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
-	
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
 
-@onready var gameManager = %GameM
-
-func _on_body_entered(body):
-	if body.name == "KidCharacter":
-			queue_free()
-			gameManager.add_point()
-	
-
+@onready var points_label = %Label
+var points = 0
+func add_point():
+	points += 1
+	points_label.text= "Points: " + str(points)

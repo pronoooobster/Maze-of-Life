@@ -19,6 +19,14 @@ config/icon="res://icon.svg"
 
 driver/enable_input=true
 
+[autoload]
+
+global="*res://global.gd"
+
+[display]
+
+window/size/mode=3
+
 [input]
 
 up={

@@ -1,10 +1,10 @@
 [gd_scene load_steps=59 format=3 uid="uid://brutkw5a22mhl"]
 
-[ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/clouds/Clouds 1/1.png" id="1_r5hn6"]
+[ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_r5hn6"]
 [ext_resource type="Script" path="res://scenes/kidMaze.gd" id="1_yumy2"]
-[ext_resource type="Texture2D" uid="uid://beakna3hi2t3v" path="res://textures/clouds/Clouds 1/2.png" id="2_uubhk"]
-[ext_resource type="Texture2D" uid="uid://fctiayc04uba" path="res://textures/clouds/Clouds 1/3.png" id="3_5d5v8"]
-[ext_resource type="Texture2D" uid="uid://ohhquvkxmohp" path="res://textures/clouds/Clouds 1/4.png" id="4_qgnsu"]
+[ext_resource type="Texture2D" uid="uid://beakna3hi2t3v" path="res://textures/Clouds/Clouds 1/2.png" id="2_uubhk"]
+[ext_resource type="Texture2D" uid="uid://fctiayc04uba" path="res://textures/Clouds/Clouds 1/3.png" id="3_5d5v8"]
+[ext_resource type="Texture2D" uid="uid://ohhquvkxmohp" path="res://textures/Clouds/Clouds 1/4.png" id="4_qgnsu"]
 [ext_resource type="Texture2D" uid="uid://ck41tijrw3q4b" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="5_hvbal"]
 [ext_resource type="Texture2D" uid="uid://x8d68colgob1" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="6_rueny"]
 [ext_resource type="Script" path="res://scenes/AnimatedText.gd" id="6_uykn6"]
@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://h6suctf5rab2" path="res://assets/Tileset/Tileset.png" id="8_xtm3d"]
 [ext_resource type="Script" path="res://scenes/AnimatedText3.gd" id="9_5vrt3"]
 [ext_resource type="Texture2D" uid="uid://bw4oxj2mg4ue4" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/full spritesheet.png" id="9_i0iyk"]
-[ext_resource type="PackedScene" path="res://scenes/pineapple.tscn" id="10_dh07d"]
+[ext_resource type="PackedScene" uid="uid://cdbx5gu4fwe4r" path="res://scenes/pineapple.tscn" id="10_dh07d"]
 [ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="11_c0vjp"]
 [ext_resource type="Script" path="res://scenes/GameM.gd" id="12_yuhh4"]
 [ext_resource type="Texture2D" uid="uid://dx3hlg8rtvjgv" path="res://assets/Free 2/Items/Checkpoints/Start/Start (Moving) (64x64).png" id="13_0jwfd"]
@@ -16929,7 +16929,6 @@ position = Vector2(512.5, 605.5)
 shape = SubResource("RectangleShape2D_uika8")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 z_index = -4
 color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
@@ -17014,7 +17013,6 @@ scale = Vector2(0.999999, 0.999999)
 zoom = Vector2(7, 7)
 
 [node name="PointLight2D" type="PointLight2D" parent="KidCharacter"]
-visible = false
 position = Vector2(32, 27)
 scale = Vector2(0.47078, 0.416582)
 texture = SubResource("GradientTexture2D_eqtdt")
