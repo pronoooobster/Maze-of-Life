@@ -1,0 +1,122 @@
+[gd_scene load_steps=21 format=3 uid="uid://dnc2tqgv6ab4m"]
+
+[ext_resource type="Script" path="res://Door2.gd" id="1_qxo0i"]
+[ext_resource type="Texture2D" uid="uid://bqlpibmgi54t" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_closed.png" id="2_gi2ti"]
+[ext_resource type="Texture2D" uid="uid://r3gu7qevsa6k" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_fullyopen.png" id="3_ugwsy"]
+[ext_resource type="Texture2D" uid="uid://d3ad0ouknghjb" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f0.png" id="4_b14uc"]
+[ext_resource type="Texture2D" uid="uid://yn6phvufcss7" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f1.png" id="5_2g5lq"]
+[ext_resource type="Texture2D" uid="uid://5pwxcbgi3vyd" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f2.png" id="6_ow3pu"]
+[ext_resource type="Texture2D" uid="uid://sk8e7amlgupd" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f3.png" id="7_dmdhs"]
+[ext_resource type="Texture2D" uid="uid://cfia61btwaxgt" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f4.png" id="8_i5tgs"]
+[ext_resource type="Texture2D" uid="uid://bii5n56lymlc3" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f5.png" id="9_nc4no"]
+[ext_resource type="Texture2D" uid="uid://dexp85mwcjq5f" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f6.png" id="10_tk8je"]
+[ext_resource type="Texture2D" uid="uid://b1i7ixmx122jx" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f7.png" id="11_o76ht"]
+[ext_resource type="Texture2D" uid="uid://dhfr5jxcoo40f" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f8.png" id="12_epj5h"]
+[ext_resource type="Texture2D" uid="uid://b5uxc160b44wk" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f9.png" id="13_1v45w"]
+[ext_resource type="Texture2D" uid="uid://1mu2ruiv26rg" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f10.png" id="14_cmyby"]
+[ext_resource type="Texture2D" uid="uid://dtq06hcph0l80" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f11.png" id="15_a6al4"]
+[ext_resource type="Texture2D" uid="uid://bxr5b6pfjrd7b" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/tiles/wall/door_anim_opening_f13.png" id="16_jc3fi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_no46c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gi2ti")
+}],
+"loop": true,
+"name": &"doorClosed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ugwsy")
+}],
+"loop": true,
+"name": &"doorOpen",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_b14uc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2g5lq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ow3pu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dmdhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_i5tgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nc4no")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tk8je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o76ht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_epj5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1v45w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cmyby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_a6al4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jc3fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ugwsy")
+}],
+"loop": false,
+"name": &"doorUnlocking",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flfps"]
+size = Vector2(31, 19)
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_2yy0o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d4dpr"]
+radius = 21.0
+
+[node name="Door" type="StaticBody2D"]
+script = ExtResource("1_qxo0i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0.5, -1)
+scale = Vector2(1.03125, 1)
+sprite_frames = SubResource("SpriteFrames_no46c")
+animation = &"doorUnlocking"
+autoplay = "doorClosed"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 6.5)
+shape = SubResource("RectangleShape2D_flfps")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamMicrophone_2yy0o")
+autoplay = true
+bus = &"Record"
+
+[node name="playerDetector" type="Area2D" parent="."]
+position = Vector2(1, 38)
+
+[node name="playerDetect" type="CollisionShape2D" parent="playerDetector"]
+position = Vector2(-1, -1)
+shape = SubResource("CircleShape2D_d4dpr")
+
+[connection signal="body_entered" from="playerDetector" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="playerDetector" to="." method="_on_area_2d_body_exited"]

@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://b0pu4t5gnbt3w"]
+
+[ext_resource type="FontFile" uid="uid://bxbmuogcjxlnd" path="res://assets/fonts/dpcomic.ttf" id="1_ju8sr"]
+
+[resource]
+base_font = ExtResource("1_ju8sr")
