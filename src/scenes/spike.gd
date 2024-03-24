@@ -35,4 +35,4 @@ func changeSpike():
 
 func _on_area_2d_body_entered(body):
 		if body.is_in_group("Player"):
-			get_tree().reload_current_scene() #change for dead animation
+			get_tree().change_scene_to_file("res://scenes/death.tscn") #change for dead animation

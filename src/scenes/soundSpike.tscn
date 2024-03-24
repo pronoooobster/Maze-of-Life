@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c0ux1jd0kj8pt"]
+[gd_scene load_steps=11 format=3 uid="uid://w7i2dplegpav"]
 
 [ext_resource type="Script" path="res://scenes/soundSpike.gd" id="1_d0gm1"]
 [ext_resource type="Texture2D" uid="uid://dysqtjx58lvfj" path="res://assets/traps/Fire_Trap.png" id="2_qnds7"]
