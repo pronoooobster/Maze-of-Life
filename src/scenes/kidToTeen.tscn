@@ -1,11 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://chea4bff5cd7a"]
+[gd_scene load_steps=11 format=3 uid="uid://cxkhvwpk1ym44"]
 
-[ext_resource type="Texture2D" uid="uid://5j741scq2eus" path="res://textures/Clouds/Clouds 3/1.png" id="1_7cnrc"]
-[ext_resource type="Texture2D" uid="uid://byamem7052iap" path="res://textures/Clouds/Clouds 3/2.png" id="2_4o8qj"]
-[ext_resource type="Texture2D" uid="uid://ce0k7idn47vfh" path="res://textures/Clouds/Clouds 3/3.png" id="3_pp8aj"]
-[ext_resource type="Texture2D" uid="uid://dsxkb8l4vricf" path="res://textures/Clouds/Clouds 3/4.png" id="4_hxiuc"]
-[ext_resource type="Script" path="res://scenes/AnimatedText.gd" id="5_k755y"]
-[ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="6_4bw53"]
+[ext_resource type="Texture2D" uid="uid://5j741scq2eus" path="res://textures/Clouds/Clouds 3/1.png" id="1_1hs4c"]
+[ext_resource type="Texture2D" uid="uid://byamem7052iap" path="res://textures/Clouds/Clouds 3/2.png" id="2_00n0s"]
+[ext_resource type="Texture2D" uid="uid://ce0k7idn47vfh" path="res://textures/Clouds/Clouds 3/3.png" id="3_x6lnp"]
+[ext_resource type="Texture2D" uid="uid://dsxkb8l4vricf" path="res://textures/Clouds/Clouds 3/4.png" id="4_t2aom"]
+[ext_resource type="Script" path="res://scenes/AnimatedTextTransition2.gd" id="5_mdne5"]
+[ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="6_vnult"]
 
 [sub_resource type="Animation" id="Animation_48gs5"]
 length = 0.001
@@ -68,7 +68,7 @@ _data = {
 "new_animation": SubResource("Animation_mg1ef")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gb7a4"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_spvuo"]
 size = Vector2(61, 11)
 
 [node name="Node" type="Node"]
@@ -81,7 +81,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.04, 1.04)
-texture = ExtResource("1_7cnrc")
+texture = ExtResource("1_1hs4c")
 metadata/_edit_use_anchors_ = true
 
 [node name="Stars" type="TextureRect" parent="BackgroundSky"]
@@ -92,7 +92,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_4o8qj")
+texture = ExtResource("2_00n0s")
 metadata/_edit_use_anchors_ = true
 
 [node name="Clouds1" type="TextureRect" parent="BackgroundSky"]
@@ -103,7 +103,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_pp8aj")
+texture = ExtResource("3_x6lnp")
 metadata/_edit_use_anchors_ = true
 
 [node name="Clouds2" type="TextureRect" parent="BackgroundSky"]
@@ -116,7 +116,7 @@ offset_top = 0.609756
 offset_bottom = 0.609741
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_hxiuc")
+texture = ExtResource("4_t2aom")
 metadata/_edit_use_anchors_ = true
 
 [node name="WelcomeText" type="CanvasLayer" parent="."]
@@ -131,7 +131,7 @@ grow_vertical = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="AnimatedText" type="Node" parent="WelcomeText/Panel"]
-script = ExtResource("5_k755y")
+script = ExtResource("5_mdne5")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WelcomeText/Panel/AnimatedText"]
 root_node = NodePath("../ColorRect/Label")
@@ -165,10 +165,11 @@ offset_right = -43.0
 offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_fonts/font = ExtResource("6_4bw53")
+theme_override_fonts/font = ExtResource("6_vnult")
 theme_override_font_sizes/font_size = 35
-text = "On 24-03-2024,
-a child was born..."
+text = "A few years later...
+As innocence fades,
+the maze grows more intricate."
 horizontal_alignment = 1
 vertical_alignment = 1
 visible_characters = 0
@@ -179,6 +180,6 @@ visible_ratio = 0.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="WelcomeText/Panel/AnimatedText/Area2D"]
 z_index = 5
 position = Vector2(782, 312.5)
-shape = SubResource("RectangleShape2D_gb7a4")
+shape = SubResource("RectangleShape2D_spvuo")
 
 [connection signal="animation_finished" from="WelcomeText/Panel/AnimatedText/AnimationPlayer" to="WelcomeText/Panel/AnimatedText" method="_on_animation_player_animation_finished"]

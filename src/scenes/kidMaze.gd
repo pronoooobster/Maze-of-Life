@@ -8,4 +8,4 @@ func _on_endgame_collider_body_entered(body):
 # Function to switch to a new scene
 func switch_to_new_scene():
 	# Change the scene
-	get_tree().change_scene_to_file("res://scenes/teenMaze.tscn")
+	get_tree().change_scene_to_file("res://scenes/kidToTeen.tscn")

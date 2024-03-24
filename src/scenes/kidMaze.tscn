@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ohhquvkxmohp" path="res://textures/Clouds/Clouds 1/4.png" id="4_qgnsu"]
 [ext_resource type="Texture2D" uid="uid://ck41tijrw3q4b" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/full tilemap.png" id="5_hvbal"]
 [ext_resource type="Texture2D" uid="uid://x8d68colgob1" path="res://assets/Modern_Interiors_Free_v2.2/Modern tiles_Free/Interiors_free/16x16/Interiors_free_16x16.png" id="6_rueny"]
-[ext_resource type="Script" path="res://scenes/AnimatedText.gd" id="6_uykn6"]
+[ext_resource type="Script" path="res://scenes/AnimatedText1.gd" id="6_worqs"]
 [ext_resource type="Script" path="res://scenes/AnimatedText2.gd" id="8_r0035"]
 [ext_resource type="Texture2D" uid="uid://h6suctf5rab2" path="res://assets/Tileset/Tileset.png" id="8_xtm3d"]
 [ext_resource type="Script" path="res://scenes/AnimatedText3.gd" id="9_5vrt3"]
@@ -16729,7 +16729,7 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="AnimatedText" type="Node" parent="WelcomeText/Panel"]
-script = ExtResource("6_uykn6")
+script = ExtResource("6_worqs")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WelcomeText/Panel/AnimatedText"]
 root_node = NodePath("../ColorRect/Label")
