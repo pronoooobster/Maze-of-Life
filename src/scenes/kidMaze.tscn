@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://bl23hbyt4cky7"]
+[gd_scene load_steps=48 format=3 uid="uid://brutkw5a22mhl"]
 
 [ext_resource type="Texture2D" uid="uid://7udrwido7ucv" path="res://textures/Clouds/Clouds 1/1.png" id="1_r5hn6"]
 [ext_resource type="Texture2D" uid="uid://beakna3hi2t3v" path="res://textures/Clouds/Clouds 1/2.png" id="2_uubhk"]
@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://28rqsj4fprpn" path="res://scenes/adultCharacter.tscn" id="6_mgoaq"]
 [ext_resource type="Texture2D" uid="uid://bdn2i12addxvy" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Items/Amulet.png" id="6_q8vkx"]
 [ext_resource type="Texture2D" uid="uid://bd5c6s8f0fpe" path="res://assets/v1.1 dungeon crawler 16X16 pixel pack/DawnLike/Items/Food.png" id="7_c04c3"]
-[ext_resource type="PackedScene" uid="uid://cdbx5gu4fwe4r" path="res://scenes/pineapple.tscn" id="10_dh07d"]
+[ext_resource type="PackedScene" path="res://scenes/pineapple.tscn" id="10_dh07d"]
 [ext_resource type="FontFile" uid="uid://di4mcgo3oto71" path="res://assets/press-start-2p/PressStart2P.ttf" id="11_c0vjp"]
 [ext_resource type="Script" path="res://scenes/GameM.gd" id="12_yuhh4"]
 [ext_resource type="Texture2D" uid="uid://dx3hlg8rtvjgv" path="res://assets/Free 2/Items/Checkpoints/Start/Start (Moving) (64x64).png" id="13_0jwfd"]
@@ -450,6 +450,7 @@ position = Vector2(1091, 496)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Start"]
 z_index = 100
+texture_filter = 1
 position = Vector2(-312, -188)
 rotation = 0.0120474
 scale = Vector2(0.875, 0.796875)
@@ -467,6 +468,7 @@ position = Vector2(2184, 1123)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Finish"]
 z_index = 1
+texture_filter = 1
 position = Vector2(-1467, -192)
 scale = Vector2(0.875, 0.796875)
 sprite_frames = SubResource("SpriteFrames_sjur6")
