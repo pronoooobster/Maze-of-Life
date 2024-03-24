@@ -4496,7 +4496,6 @@ layer_3/z_index = 2
 layer_3/tile_data = PackedInt32Array(3211268, 393217, 13, 3211269, 393217, 13, 3211270, 393217, 13, 3211271, 393217, 13)
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-visible = false
 color = Color(0.0862745, 0.0862745, 0.0862745, 1)
 
 [node name="TeenCharacter" parent="." instance=ExtResource("8_0tp8j")]
@@ -4577,5 +4576,29 @@ autoplay = "default"
 z_index = 12
 position = Vector2(18, 21)
 shape = SubResource("RectangleShape2D_kh842")
+
+[node name="book9" parent="." instance=ExtResource("9_xtq70")]
+position = Vector2(270, 895)
+
+[node name="book10" parent="." instance=ExtResource("9_xtq70")]
+position = Vector2(463, 229)
+
+[node name="book11" parent="." instance=ExtResource("9_xtq70")]
+position = Vector2(-398, 529)
+
+[node name="book12" parent="." instance=ExtResource("9_xtq70")]
+position = Vector2(-112, 1366)
+
+[node name="book13" parent="." instance=ExtResource("9_xtq70")]
+position = Vector2(-84, 2097)
+
+[node name="book14" parent="." instance=ExtResource("9_xtq70")]
+position = Vector2(106, 2467)
+
+[node name="book15" parent="." instance=ExtResource("9_xtq70")]
+position = Vector2(587, 1915)
+
+[node name="book16" parent="." instance=ExtResource("9_xtq70")]
+position = Vector2(369, -75)
 
 [connection signal="body_entered" from="Finish" to="." method="_on_finish_body_entered"]

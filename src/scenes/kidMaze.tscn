@@ -17017,4 +17017,17 @@ position = Vector2(32, 27)
 scale = Vector2(0.47078, 0.416582)
 texture = SubResource("GradientTexture2D_eqtdt")
 
+[node name="Area2D" parent="." instance=ExtResource("10_dh07d")]
+z_index = 1
+position = Vector2(903, 491)
+
+[node name="Area2D2" parent="." instance=ExtResource("10_dh07d")]
+position = Vector2(560, 539)
+
+[node name="Area2D3" parent="." instance=ExtResource("10_dh07d")]
+position = Vector2(1106, 410)
+
+[node name="Area2D4" parent="." instance=ExtResource("10_dh07d")]
+position = Vector2(741, 188)
+
 [connection signal="body_entered" from="TileMap/EndgameCollider" to="." method="_on_endgame_collider_body_entered"]
