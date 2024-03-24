@@ -1,8 +1,9 @@
 extends Area2D
-@onready var animated_sprite_2d = $AnimatedSprite2D
+
 @onready var collision_shape_2d = $Area2D/CollisionShape2D
 @onready var spike_timer = $spikeTimer
 @onready var timer = $Timer
+@onready var animated_sprite_2d = $AnimatedSprite2D
 
 var isSpikeOpen: bool = false
 
@@ -34,4 +35,4 @@ func changeSpike():
 
 func _on_area_2d_body_entered(body):
 		if body.is_in_group("Player"):
-			get_tree().reload_current_scene()
+			get_tree().change_scene_to_file("res://scenes/death.tscn") #change for dead animation

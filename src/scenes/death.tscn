@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=3 uid="uid://do4bledwh3tr3"]
+
+[ext_resource type="Texture2D" uid="uid://bcbgifnxfp4tt" path="res://textures/Clouds/Clouds 8/1.png" id="1_pfipm"]
+[ext_resource type="Script" path="res://scenes/death.gd" id="1_q5eq3"]
+[ext_resource type="Texture2D" uid="uid://3103ar2u3cy2" path="res://textures/Clouds/Clouds 8/2.png" id="2_2vcqf"]
+[ext_resource type="Texture2D" uid="uid://b3vfksakr068d" path="res://textures/Clouds/Clouds 8/3.png" id="3_7c45w"]
+[ext_resource type="Texture2D" uid="uid://bdmeu5rqkdori" path="res://textures/Clouds/Clouds 8/4.png" id="4_gkxs1"]
+[ext_resource type="FontVariation" uid="uid://b0pu4t5gnbt3w" path="res://assets/fonts/dpcomic.tres" id="5_ldejv"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_q5eq3")
+
+[node name="BackgroundSky" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.04, 1.04)
+texture = ExtResource("1_pfipm")
+
+[node name="Stars" type="TextureRect" parent="BackgroundSky"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2vcqf")
+
+[node name="Clouds1" type="TextureRect" parent="BackgroundSky"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_7c45w")
+
+[node name="Clouds2" type="TextureRect" parent="BackgroundSky"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.609756
+offset_bottom = 0.609741
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_gkxs1")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -281.0
+offset_top = -65.0
+offset_right = 282.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("5_ldejv")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center] 
+You died!
+Press SPACE to get reborn
+[/center]"
