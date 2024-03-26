@@ -1,5 +1,22 @@
 # Description
 
+"Maze of Life" is a game developed within the hackathon organized by Skip, Chalmers University, and Gothenburg University. Each team had 48 hours to develop a game based on the theme "Whisper of Change." The game is available at the link: https://itch.io/jam/march-game-jam-2024
+
+Maze of Life is a philosophical journey where you guide a character through the intricate mazes of existence. As you navigate through the corridors of different stages of your life, you'll confront the complexities of growth, change, and transformation.
+Each maze represents a stage of life and challenges that get progressively harder in reflection of the human experience.
+
+## Demo
+
+<img src="./src/assets/demo.png" alt="demo" width=700>
+
+## Developed by:
+
+- Marko Mojsov  
+- Andrii Demchenko
+- Mariia Zabolotnia
+- Carlos Campos Herrera
+- Marcelo Santibáñez Ávalos
+
 # Credits
 
 ## Textures
